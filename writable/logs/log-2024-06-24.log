@@ -1,0 +1,309 @@
+CRITICAL - 2024-06-24 08:06:06 --> Undefined array key ""
+in APPPATH\Libraries\AuthLibrary.php on line 417.
+ 1 APPPATH\Libraries\AuthLibrary.php(417): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 417)
+ 2 APPPATH\Controllers\Auth.php(104): App\Libraries\AuthLibrary->autoredirect()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 08:06:39 --> Undefined array key ""
+in APPPATH\Libraries\AuthLibrary.php on line 417.
+ 1 APPPATH\Libraries\AuthLibrary.php(417): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 417)
+ 2 APPPATH\Controllers\Auth.php(104): App\Libraries\AuthLibrary->autoredirect()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 08:42:27 --> Undefined variable $user
+in APPPATH\Controllers\DashboardController.php on line 58.
+ 1 APPPATH\Controllers\DashboardController.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 08:44:32 --> Undefined variable $userId
+in APPPATH\Controllers\DashboardController.php on line 59.
+ 1 APPPATH\Controllers\DashboardController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-24 08:45:29 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kelas`\n...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas`\n...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas`\n...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`\n...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\project_ta\app\Models\ModelSiswa.php(100): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(61): App\Models\ModelSiswa->getKelasByIdReferensi('10')
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-24 08:45:29 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`
+FROM `tbl_siswa`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ModelSiswa.php(100): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\DashboardController.php(61): App\Models\ModelSiswa->getKelasByIdReferensi('10')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-24 08:45:30 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kelas`\n...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas`\n...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas`\n...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`\n...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\project_ta\app\Models\ModelSiswa.php(100): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(61): App\Models\ModelSiswa->getKelasByIdReferensi('10')
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-24 08:45:30 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`
+FROM `tbl_siswa`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ModelSiswa.php(100): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\DashboardController.php(61): App\Models\ModelSiswa->getKelasByIdReferensi('10')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-24 08:46:10 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `kelas`\n...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `kelas`\n...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `kelas`\n...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`\n...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\project_ta\app\Models\ModelSiswa.php(100): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(61): App\Models\ModelSiswa->getKelasByIdReferensi('10')
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-24 08:46:10 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `kelas`
+FROM `tbl_siswa`
+WHERE `id` = :id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\ModelSiswa.php(100): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\DashboardController.php(61): App\Models\ModelSiswa->getKelasByIdReferensi('10')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 08:53:23 --> Undefined variable $kelas
+in APPPATH\Views\dashboard\DashboardUser.php on line 19.
+ 1 APPPATH\Views\dashboard\DashboardUser.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\DashboardUser.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\DashboardUser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Dashboard/DashboardUser', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(67): view('Dashboard/DashboardUser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:06:17 --> Undefined variable $rememberMe
+in APPPATH\Controllers\Auth.php on line 71.
+ 1 APPPATH\Controllers\Auth.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rememberMe', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:06:33 --> Too few arguments to function App\Libraries\AuthLibrary::LoginUser(), 1 passed in C:\xampp\htdocs\project_ta\app\Controllers\Auth.php on line 71 and exactly 2 expected
+in APPPATH\Libraries\AuthLibrary.php on line 25.
+ 1 APPPATH\Controllers\Auth.php(71): App\Libraries\AuthLibrary->LoginUser('3301021303170003')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:11:26 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 65.
+ 1 APPPATH\Controllers\Auth.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:11:49 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:12:46 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:12:47 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:12:48 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:12:48 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:13:03 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:13:04 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:13:05 --> Undefined variable $errors
+in APPPATH\Controllers\Auth.php on line 58.
+ 1 APPPATH\Controllers\Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $errors', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:14:29 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 30.
+ 1 APPPATH\Libraries\AuthLibrary.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 30)
+ 2 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('33010213031700031')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 09:14:54 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 30.
+ 1 APPPATH\Libraries\AuthLibrary.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 30)
+ 2 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('33010213031700031')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 12:32:59 --> Undefined array key "tmt"
+in APPPATH\Views\Guru\detail.php on line 16.
+ 1 APPPATH\Views\Guru\detail.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tmt"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php', 16)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/detail', [], true)
+ 5 APPPATH\Controllers\GuruController.php(81): view('Guru/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->detail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 12:35:41 --> Undefined variable $value
+in APPPATH\Views\User\detail.php on line 34.
+ 1 APPPATH\Views\User\detail.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/detail', [], true)
+ 5 APPPATH\Controllers\Auth.php(169): view('User/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->detail('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 12:37:07 --> Undefined variable $value
+in APPPATH\Views\User\detail.php on line 34.
+ 1 APPPATH\Views\User\detail.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/detail', [], true)
+ 5 APPPATH\Controllers\Auth.php(170): view('User/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->detail('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 12:37:16 --> Attempt to read property "id_guru" on null
+in APPPATH\Views\User\detail.php on line 34.
+ 1 APPPATH\Views\User\detail.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_guru" on null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/detail', [], true)
+ 5 APPPATH\Controllers\Auth.php(170): view('User/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->detail('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 12:37:47 --> Attempt to read property "id_guru" on null
+in APPPATH\Views\User\detail.php on line 34.
+ 1 APPPATH\Views\User\detail.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_guru" on null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/detail', [], true)
+ 5 APPPATH\Controllers\Auth.php(171): view('User/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->detail('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 12:38:03 --> Undefined variable $guru
+in APPPATH\Views\User\detail.php on line 34.
+ 1 APPPATH\Views\User\detail.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $guru', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/detail', [], true)
+ 5 APPPATH\Controllers\Auth.php(169): view('User/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->detail('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 13:33:48 --> Undefined property: stdClass::$nik
+in APPPATH\Views\Guru\Guru.php on line 34.
+ 1 APPPATH\Views\Guru\Guru.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$nik', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\Guru.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\Guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/Guru', [], true)
+ 5 APPPATH\Controllers\GuruController.php(26): view('Guru/Guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-24 13:51:50 --> Undefined array key "Nama"
+in APPPATH\Views\Siswa\edit.php on line 17.
+ 1 APPPATH\Views\Siswa\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Siswa\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Siswa\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Siswa/edit', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(100): view('Siswa/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->edit('10')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

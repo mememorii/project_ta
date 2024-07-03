@@ -1,0 +1,54 @@
+CRITICAL - 2024-07-02 01:36:45 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 85.
+ 1 APPPATH\Libraries\AuthLibrary.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 85)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301020602830000')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 10:59:51 --> Class "App\Models\LogModel" not found
+in APPPATH\Controllers\DashboardController.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\DashboardController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 11:00:35 --> Undefined property: App\Controllers\DashboardController::$LogModel
+in APPPATH\Controllers\DashboardController.php on line 37.
+ 1 APPPATH\Controllers\DashboardController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DashboardController::$LogModel', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 37)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 11:01:17 --> Undefined variable $pengunjung
+in APPPATH\Views\dashboard\dashboard.php on line 60.
+ 1 APPPATH\Views\dashboard\dashboard.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $pengunjung', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Dashboard/Dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(50): view('Dashboard/Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 11:49:39 --> Call to undefined method App\Models\ModelCrm::totalWali
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\DashboardController.php(43): CodeIgniter\Model->__call('totalWali', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 11:50:54 --> Undefined property: App\Controllers\DashboardController::$AuthModel
+in APPPATH\Controllers\DashboardController.php on line 44.
+ 1 APPPATH\Controllers\DashboardController.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DashboardController::$AuthModel', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 44)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-02 11:51:24 --> Call to undefined method App\Models\AuthModel::totalUser
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\DashboardController.php(45): CodeIgniter\Model->__call('totalUser', [])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

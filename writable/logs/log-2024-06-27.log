@@ -1,0 +1,293 @@
+CRITICAL - 2024-06-27 01:26:48 --> Cannot use object of type stdClass as array
+in APPPATH\Controllers\GuruController.php on line 248.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->exportAll()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 02:38:48 --> Undefined array key "nama_siswa"
+in APPPATH\Views\Wali\detail.php on line 18.
+ 1 APPPATH\Views\Wali\detail.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/detail', [], true)
+ 5 APPPATH\Controllers\WaliController.php(98): view('Wali/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->detail('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 02:46:09 --> Trying to access array offset on value of type null
+in APPPATH\Views\profile.php on line 53.
+ 1 APPPATH\Views\profile.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 02:46:21 --> Trying to access array offset on value of type null
+in APPPATH\Views\profile.php on line 53.
+ 1 APPPATH\Views\profile.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 02:46:25 --> Trying to access array offset on value of type null
+in APPPATH\Views\profile.php on line 53.
+ 1 APPPATH\Views\profile.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 05:29:33 --> Trying to access array offset on value of type null
+in APPPATH\Views\profile.php on line 53.
+ 1 APPPATH\Views\profile.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:12:58 --> Undefined array key "email"
+in APPPATH\Validation\AuthRules.php on line 30.
+ 1 APPPATH\Validation\AuthRules.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "email"', 'C:\\xampp\\htdocs\\project_ta\\app\\Validation\\AuthRules.php', 30)
+ 2 SYSTEMPATH\Validation\Validation.php(311): App\Validation\AuthRules->validateUser('1963121019830420', 'nik,password', [...], null, 'password')
+ 3 SYSTEMPATH\Validation\Validation.php(197): CodeIgniter\Validation\Validation->processRules('password', 'password', '1963121019830420', [...], [...])
+ 4 SYSTEMPATH\Controller.php(152): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH\Controllers\Auth.php(65): CodeIgniter\Controller->validate([...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:15:49 --> Undefined array key "nik"
+in APPPATH\Libraries\AuthLibrary.php on line 107.
+ 1 APPPATH\Libraries\AuthLibrary.php(107): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nik"', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 107)
+ 2 APPPATH\Libraries\AuthLibrary.php(47): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(222): App\Libraries\AuthLibrary->editProfile([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->account()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:32:15 --> Attempt to read property "id_siswa" on array
+in APPPATH\Views\Wali\create.php on line 45.
+ 1 APPPATH\Views\Wali\create.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_siswa" on array', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/create', [], true)
+ 5 APPPATH\Controllers\WaliController.php(44): view('Wali/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:38:04 --> Attempt to read property "id_siswa" on array
+in APPPATH\Views\Wali\edit.php on line 21.
+ 1 APPPATH\Views\Wali\edit.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_siswa" on array', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(86): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:38:25 --> Attempt to read property "id_siswa" on array
+in APPPATH\Views\Wali\edit.php on line 21.
+ 1 APPPATH\Views\Wali\edit.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_siswa" on array', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 21)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(86): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:38:38 --> Attempt to read property "nama" on array
+in APPPATH\Views\Wali\edit.php on line 22.
+ 1 APPPATH\Views\Wali\edit.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(86): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:39:29 --> Undefined variable $siswaWali
+in APPPATH\Views\Wali\edit.php on line 19.
+ 1 APPPATH\Views\Wali\edit.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswaWali', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 19)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(86): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:52:07 --> Undefined array key "kelas_s"
+in APPPATH\Views\Wali\create.php on line 49.
+ 1 APPPATH\Views\Wali\create.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_s"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/create', [], true)
+ 5 APPPATH\Controllers\WaliController.php(44): view('Wali/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:53:53 --> Undefined array key "kelas_s"
+in APPPATH\Views\Wali\create.php on line 49.
+ 1 APPPATH\Views\Wali\create.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_s"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/create', [], true)
+ 5 APPPATH\Controllers\WaliController.php(45): view('Wali/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:53:54 --> Undefined array key "kelas_s"
+in APPPATH\Views\Wali\create.php on line 49.
+ 1 APPPATH\Views\Wali\create.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_s"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/create', [], true)
+ 5 APPPATH\Controllers\WaliController.php(45): view('Wali/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 08:59:42 --> Undefined array key "kelas_s"
+in APPPATH\Views\Wali\create.php on line 50.
+ 1 APPPATH\Views\Wali\create.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_s"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php', 50)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/create', [], true)
+ 5 APPPATH\Controllers\WaliController.php(45): view('Wali/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-27 15:41:04 --> Undefined array key "nama_siswa"
+in APPPATH\Views\Wali\create.php on line 45.
+ 1 APPPATH\Views\Wali\create.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php', 45)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/create', [], true)
+ 5 APPPATH\Controllers\WaliController.php(45): view('Wali/create', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-27 15:44:22 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`ta`.`tbl_wali`, CONSTRAINT `FK_tbl_wali_tbl_siswa` FOREIGN KEY (`id_siswa`) REFERENCES `tbl_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE) in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\project_ta\app\Controllers\WaliController.php(59): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\WaliController->store()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-27 15:44:22 --> Cannot add or update a child row: a foreign key constraint fails (`ta`.`tbl_wali`, CONSTRAINT `FK_tbl_wali_tbl_siswa` FOREIGN KEY (`id_siswa`) REFERENCES `tbl_siswa` (`id_siswa`) ON DELETE CASCADE ON UPDATE CASCADE)
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_wali` (`id_wali`, `id_siswa`, `jk`, `nik`, `nama`, `pekerjaan`, `kelas_siswa`) VALUES (:id_wali:, :id_siswa:, :jk:, :nik:, :nama:, :pekerjaan:, :kelas_siswa:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\WaliController.php(59): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-27 15:46:38 --> mysqli_sql_exception: Column 'kelas_siswa' cannot be null in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\project_ta\app\Controllers\WaliController.php(59): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\WaliController->store()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-06-27 15:46:38 --> Column 'kelas_siswa' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_wali` (`id_wali`, `id_siswa`, `jk`, `nik`, `nama`, `pekerjaan`, `kelas_siswa`) VALUES (:id_wali:, :id_siswa:, :jk:, :nik:, :nama:, :pekerjaan:, :kelas_siswa:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\WaliController.php(59): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-27 23:00:33 --> mysqli_sql_exception: Unknown column 'kode_crm' in 'field list' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT MAX(`kod...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`kod...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`kod...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`kod...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(74): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(81): App\Models\ModelCrm->autoCode()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->auto()
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-27 23:00:33 --> Unknown column 'kode_crm' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`kode_crm`) AS `kodeMax`
+FROM `tbl_crm`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelCrm.php(74): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\CrmController.php(81): App\Models\ModelCrm->autoCode()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->auto()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-27 23:00:42 --> mysqli_sql_exception: Unknown column 'kode_crm' in 'field list' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT MAX(`kod...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT MAX(`kod...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT MAX(`kod...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`kod...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(74): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(81): App\Models\ModelCrm->autoCode()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->auto()
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-06-27 23:00:42 --> Unknown column 'kode_crm' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT MAX(`kode_crm`) AS `kodeMax`
+FROM `tbl_crm`', [], false)
+ 2 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\ModelCrm.php(74): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Controllers\CrmController.php(81): App\Models\ModelCrm->autoCode()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->auto()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

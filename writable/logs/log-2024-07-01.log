@@ -1,0 +1,257 @@
+CRITICAL - 2024-07-01 13:40:36 --> Undefined array key "name"
+in APPPATH\Views\User\User.php on line 36.
+ 1 APPPATH\Views\User\User.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\User.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\User\\User.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/User', [], true)
+ 5 APPPATH\Controllers\Auth.php(84): view('User/User', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->list()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 15:23:27 --> Undefined array key "kelas"
+in APPPATH\Views\Guru\Guru.php on line 36.
+ 1 APPPATH\Views\Guru\Guru.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\Guru.php', 36)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\Guru.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/Guru', [], true)
+ 5 APPPATH\Controllers\GuruController.php(28): view('Guru/Guru', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-01 15:24:30 --> mysqli_sql_exception: Unknown column 'tempat_lahir' in 'field list' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\project_ta\app\Controllers\GuruController.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\GuruController->store()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-01 15:24:30 --> Unknown column 'tempat_lahir' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_guru` (`id_guru`, `nip`, `nik`, `jabatan`, `nama`, `jk`, `tempat_lahir`, `tanggal_lahir`, `pendidikan`, `pangkat`, `agama`, `guru_kelas`, `rombel`) VALUES (:id_guru:, :nip:, :nik:, :jabatan:, :nama:, :jk:, :tempat_lahir:, :tanggal_lahir:, :pendidikan:, :pangkat:, :agama:, :guru_kelas:, :rombel:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\GuruController.php(63): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-01 15:25:18 --> mysqli_sql_exception: Unknown column 'tempat_lahir' in 'field list' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\project_ta\app\Controllers\GuruController.php(63): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\GuruController->store()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-01 15:25:18 --> Unknown column 'tempat_lahir' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_guru` (`id_guru`, `nip`, `nik`, `jabatan`, `nama`, `jk`, `tempat_lahir`, `tanggal_lahir`, `pendidikan`, `pangkat`, `agama`, `guru_kelas`, `rombel`) VALUES (:id_guru:, :nip:, :nik:, :jabatan:, :nama:, :jk:, :tempat_lahir:, :tanggal_lahir:, :pendidikan:, :pangkat:, :agama:, :guru_kelas:, :rombel:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\GuruController.php(63): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-01 15:26:01 --> mysqli_sql_exception: Column 'guru_kelas' cannot be null in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\project_ta\app\Controllers\GuruController.php(61): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\GuruController->store()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-01 15:26:01 --> Column 'guru_kelas' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tbl_guru` (`id_guru`, `nip`, `nik`, `jabatan`, `nama`, `jk`, `pendidikan`, `pangkat`, `agama`, `guru_kelas`, `rombel`) VALUES (:id_guru:, :nip:, :nik:, :jabatan:, :nama:, :jk:, :pendidikan:, :pangkat:, :agama:, :guru_kelas:, :rombel:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\GuruController.php(61): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-01 15:57:28 --> mysqli_sql_exception: Unknown column 'golongan' in 'field list' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `tbl_gur...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `tbl_gur...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `tbl_gur...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_gur...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(949): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(776): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\project_ta\app\Controllers\GuruController.php(120): CodeIgniter\Model->update('6', Array)
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\GuruController->update()
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-07-01 15:57:28 --> Unknown column 'golongan' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2475): CodeIgniter\Database\BaseConnection->query('UPDATE `tbl_guru` SET `id_guru` = :id_guru:, `nip` = :nip:, `nik` = :nik:, `jabatan` = :jabatan:, `nama` = :nama:, `jk` = :jk:, `pendidikan` = :pendidikan:, `pangkat` = :pangkat:, `golongan` = :golongan:, `agama` = :agama:, `guru_kelas` = :guru_kelas:, `rombel` = :rombel:
+WHERE `tbl_guru`.`id_guru` IN :tbl_guru.id_guru:', [...], false)
+ 2 SYSTEMPATH\Model.php(385): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\GuruController.php(120): CodeIgniter\Model->update('6', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->update()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 15:59:21 --> Undefined array key "tempat_lahir"
+in APPPATH\Views\Guru\detail.php on line 18.
+ 1 APPPATH\Views\Guru\detail.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tempat_lahir"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php', 18)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/detail', [], true)
+ 5 APPPATH\Controllers\GuruController.php(85): view('Guru/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->detail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:42:30 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:44:42 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:47:20 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:49:41 --> Undefined array key "uuid"
+in APPPATH\Libraries\AuthLibrary.php on line 68.
+ 1 APPPATH\Libraries\AuthLibrary.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "uuid"', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 68)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:51:28 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession(null)
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:51:35 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:53:19 --> Undefined array key "uuid"
+in APPPATH\Libraries\AuthLibrary.php on line 81.
+ 1 APPPATH\Libraries\AuthLibrary.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "uuid"', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 81)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:54:17 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 16:55:17 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301025012630001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 17:06:44 --> Undefined array key "tempat_lahir"
+in APPPATH\Views\profile.php on line 72.
+ 1 APPPATH\Views\profile.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tempat_lahir"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 72)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(205): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 17:07:09 --> Undefined array key "kelas"
+in APPPATH\Views\profile.php on line 75.
+ 1 APPPATH\Views\profile.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(205): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 17:12:25 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 82.
+ 1 APPPATH\Libraries\AuthLibrary.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 82)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(70): App\Libraries\AuthLibrary->LoginUser('3301027107850004')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-01 17:12:44 --> Undefined variable $user
+in APPPATH\Controllers\Auth.php on line 191.
+ 1 APPPATH\Controllers\Auth.php(191): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 191)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('7')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,128 @@
+ERROR - 2024-06-28 17:15:29 --> mysqli_sql_exception: Column 'nama' cannot be null in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\AuthModel.php(99): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\project_ta\app\Libraries\AuthLibrary.php(155): App\Models\AuthModel->LogLogin(Array)
+#6 C:\xampp\htdocs\project_ta\app\Libraries\AuthLibrary.php(133): App\Libraries\AuthLibrary->loginlog()
+#7 C:\xampp\htdocs\project_ta\app\Libraries\AuthLibrary.php(47): App\Libraries\AuthLibrary->setUserSession(Array)
+#8 C:\xampp\htdocs\project_ta\app\Controllers\Auth.php(257): App\Libraries\AuthLibrary->editProfile(Array)
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\Auth->account()
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-06-28 17:15:29 --> Column 'nama' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `auth_logins` (`user_id`, `nama`, `role`, `ip_address`, `date`, `successfull`) VALUES (:user_id:, :nama:, :role:, :ip_address:, :date:, :successfull:)', [...], false)
+ 2 APPPATH\Models\AuthModel.php(99): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Libraries\AuthLibrary.php(155): App\Models\AuthModel->LogLogin([...])
+ 4 APPPATH\Libraries\AuthLibrary.php(133): App\Libraries\AuthLibrary->loginlog()
+ 5 APPPATH\Libraries\AuthLibrary.php(47): App\Libraries\AuthLibrary->setUserSession([...])
+ 6 APPPATH\Controllers\Auth.php(257): App\Libraries\AuthLibrary->editProfile([...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->account()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:21:46 --> Undefined variable $user
+in APPPATH\Controllers\Auth.php on line 251.
+ 1 APPPATH\Controllers\Auth.php(251): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 251)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->account()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:22:45 --> Undefined array key "id"
+in APPPATH\Libraries\AuthLibrary.php on line 105.
+ 1 APPPATH\Libraries\AuthLibrary.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 105)
+ 2 APPPATH\Libraries\AuthLibrary.php(47): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(251): App\Libraries\AuthLibrary->editProfile([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->account()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:27:45 --> Undefined array key "id_referensi"
+in APPPATH\Libraries\AuthLibrary.php on line 109.
+ 1 APPPATH\Libraries\AuthLibrary.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_referensi"', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 109)
+ 2 APPPATH\Libraries\AuthLibrary.php(47): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(257): App\Libraries\AuthLibrary->editProfile([...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->account()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:30:16 --> Undefined array key "id_guru"
+in APPPATH\Views\Guru\edit.php on line 11.
+ 1 APPPATH\Views\Guru\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_guru"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/edit', [], true)
+ 5 APPPATH\Controllers\Auth.php(182): view('Guru/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->edit('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:33:52 --> Undefined array key "id_guru"
+in APPPATH\Views\Guru\edit.php on line 11.
+ 1 APPPATH\Views\Guru\edit.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_guru"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\edit.php', 11)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/edit', [], true)
+ 5 APPPATH\Controllers\Auth.php(182): view('Guru/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->edit('25')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:36:12 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate(null, [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [...])
+ 3 APPPATH\Controllers\Auth.php(206): CodeIgniter\Model->update(null, [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->update()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:43:51 --> Undefined array key "data"
+in APPPATH\Controllers\Auth.php on line 206.
+ 1 APPPATH\Controllers\Auth.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 17:44:34 --> Undefined array key "data"
+in APPPATH\Controllers\Auth.php on line 206.
+ 1 APPPATH\Controllers\Auth.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "data"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 206)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-28 17:49:31 --> mysqli_sql_exception: Column 'nik' cannot be null in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\project_ta\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\project_ta\system\BaseModel.php(698): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\project_ta\app\Libraries\AuthLibrary.php(96): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\project_ta\app\Controllers\Auth.php(206): App\Libraries\AuthLibrary->updatePassword(Array)
+#10 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\Auth->update()
+#11 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#12 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#14 {main}
+CRITICAL - 2024-06-28 17:49:31 --> Column 'nik' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`nik`, `password`) VALUES (:nik:, :password:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(698): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Libraries\AuthLibrary.php(96): CodeIgniter\BaseModel->save([...])
+ 7 APPPATH\Controllers\Auth.php(206): App\Libraries\AuthLibrary->updatePassword([...])
+ 8 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->update()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

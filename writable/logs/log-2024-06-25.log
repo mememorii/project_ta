@@ -1,0 +1,1063 @@
+CRITICAL - 2024-06-25 14:31:33 --> Undefined variable $userId
+in APPPATH\Controllers\DashboardController.php on line 34.
+ 1 APPPATH\Controllers\DashboardController.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userId', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 34)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 14:35:18 --> Undefined variable $kelas
+in APPPATH\Views\dashboard\dashboard.php on line 4.
+ 1 APPPATH\Views\dashboard\dashboard.php(4): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php', 4)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Dashboard/Dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(61): view('Dashboard/Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:13:42 --> Class "App\Controllers\AuthModel" not found
+in APPPATH\Controllers\CrmController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:14:05 --> Class "App\Controllers\ModelGuru" not found
+in APPPATH\Controllers\CrmController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:14:21 --> Undefined variable $id
+in APPPATH\Controllers\CrmController.php on line 41.
+ 1 APPPATH\Controllers\CrmController.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 41)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:14:53 --> Undefined array key "id_referensi"
+in APPPATH\Controllers\CrmController.php on line 42.
+ 1 APPPATH\Controllers\CrmController.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_referensi"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 42)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:51:51 --> Class "App\Controllers\AuthModel" not found
+in APPPATH\Controllers\CrmController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:52:21 --> Class "App\Controllers\ModelGuru" not found
+in APPPATH\Controllers\CrmController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:08:46 --> Class "App\Libraries\ModelGuru" not found
+in APPPATH\Libraries\AuthLibrary.php on line 99.
+ 1 APPPATH\Libraries\AuthLibrary.php(32): App\Libraries\AuthLibrary->setUserSession([...])
+ 2 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('3301027107850004')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:09:24 --> Undefined variable $session
+in APPPATH\Libraries\AuthLibrary.php on line 112.
+ 1 APPPATH\Libraries\AuthLibrary.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 112)
+ 2 APPPATH\Libraries\AuthLibrary.php(33): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('3301027107850004')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:09:52 --> Undefined variable $session
+in APPPATH\Libraries\AuthLibrary.php on line 116.
+ 1 APPPATH\Libraries\AuthLibrary.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 116)
+ 2 APPPATH\Libraries\AuthLibrary.php(33): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('3301027107850004')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:09:54 --> Undefined variable $session
+in APPPATH\Libraries\AuthLibrary.php on line 116.
+ 1 APPPATH\Libraries\AuthLibrary.php(116): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 116)
+ 2 APPPATH\Libraries\AuthLibrary.php(33): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('3301027107850004')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:10:08 --> Undefined variable $kelas
+in APPPATH\Views\Crm\Crm.php on line 33.
+ 1 APPPATH\Views\Crm\Crm.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(56): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:00:40 --> Undefined variable $idReferensi
+in APPPATH\Models\ModelCrm.php on line 154.
+ 1 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idReferensi', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 154)
+ 2 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:00:56 --> Too few arguments to function App\Models\ModelCrm::get_nama_kelas(), 0 passed in C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php on line 40 and exactly 1 expected
+in APPPATH\Models\ModelCrm.php on line 147.
+ 1 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:02:24 --> Too few arguments to function App\Models\ModelCrm::get_nama_kelas(), 0 passed in C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php on line 40 and exactly 1 expected
+in APPPATH\Models\ModelCrm.php on line 147.
+ 1 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:02:30 --> mysqli_sql_exception: Unknown column 'siswa.id' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:02:30 --> Unknown column 'siswa.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nama` AS `siswa_nama`, `tbl_siswa`.`kelas`, `tbl_wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` ON `siswa`.`id` = `c`.`id_referensi`
+JOIN `tbl_wali` ON `wali`.`id` = `tbl_siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:02:32 --> mysqli_sql_exception: Unknown column 'siswa.id' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:02:32 --> Unknown column 'siswa.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nama` AS `siswa_nama`, `tbl_siswa`.`kelas`, `tbl_wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` ON `siswa`.`id` = `c`.`id_referensi`
+JOIN `tbl_wali` ON `wali`.`id` = `tbl_siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:02:47 --> mysqli_sql_exception: Unknown column 'siswa.id_siswa' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:02:47 --> Unknown column 'siswa.id_siswa' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nama` AS `siswa_nama`, `tbl_siswa`.`kelas`, `tbl_wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+JOIN `tbl_wali` ON `wali`.`id_wali` = `tbl_siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:03:20 --> mysqli_sql_exception: Unknown column 'tbl_siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tbl_sis...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tbl_sis...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tbl_sis...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_sis...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:03:20 --> Unknown column 'tbl_siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tbl_siswa`.`nama` AS `siswa_nama`, `tbl_siswa`.`kelas`, `tbl_wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` ON `tbl_siswa`.`id_siswa` = `c`.`id_referensi`
+JOIN `tbl_wali` ON `tbl_wali`.`id_wali` = `tbl_siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:04:32 --> mysqli_sql_exception: Unknown column 'siswa.id' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:04:32 --> Unknown column 'siswa.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id` = `c`.`id_referensi`
+JOIN `tbl_wali` `wali` ON `wali`.`id` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:04:47 --> mysqli_sql_exception: Unknown column 'wali.id' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:04:47 --> Unknown column 'wali.id' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+JOIN `tbl_wali` `wali` ON `wali`.`id` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:04:52 --> mysqli_sql_exception: Unknown column 'siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:04:52 --> Unknown column 'siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+JOIN `tbl_wali` `wali` ON `wali`.`id_wali` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:06:03 --> mysqli_sql_exception: Unknown column 'siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:06:03 --> Unknown column 'siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+JOIN `tbl_wali` `wali` ON `wali`.`id_wali` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:06:05 --> mysqli_sql_exception: Unknown column 'siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:06:05 --> Unknown column 'siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+JOIN `tbl_wali` `wali` ON `wali`.`id_wali` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:07:50 --> mysqli_sql_exception: Unknown column 'siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:07:50 --> Unknown column 'siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+LEFT JOIN `tbl_wali` `wali` ON `wali`.`id_wali` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:07:51 --> mysqli_sql_exception: Unknown column 'siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:07:51 --> Unknown column 'siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+LEFT JOIN `tbl_wali` `wali` ON `wali`.`id_wali` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:07:53 --> mysqli_sql_exception: Unknown column 'siswa.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:07:53 --> Unknown column 'siswa.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`nama` AS `siswa_nama`, `siswa`.`kelas`, `wali`.`nama` AS `wali_nama`
+FROM `tbl_crm` `c`
+JOIN `tbl_siswa` `siswa` ON `siswa`.`id_siswa` = `c`.`id_referensi`
+LEFT JOIN `tbl_wali` `wali` ON `wali`.`id_wali` = `siswa`.`id_wali`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(154): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(40): App\Models\ModelCrm->get_nama_kelas()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:12:30 --> Undefined array key "kelas_siswa"
+in APPPATH\Views\Crm\Crm.php on line 49.
+ 1 APPPATH\Views\Crm\Crm.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(44): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:13:25 --> Undefined array key "kelas_siswa"
+in APPPATH\Views\Crm\Crm.php on line 49.
+ 1 APPPATH\Views\Crm\Crm.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(44): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:17:01 --> Undefined array key "kelas_siswa"
+in APPPATH\Views\Crm\Crm.php on line 49.
+ 1 APPPATH\Views\Crm\Crm.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(44): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:20:33 --> Undefined array key "kelas"
+in APPPATH\Views\Crm\Crm.php on line 34.
+ 1 APPPATH\Views\Crm\Crm.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(44): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:22:21 --> mysqli_sql_exception: Unknown column 'tw.nama' in 'field list' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tw`.`na...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tw`.`na...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tw`.`na...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`na...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:22:21 --> Unknown column 'tw.nama' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`nama` as `nama_wali`, `ts`.`nama` as `nama_siswa`, `ts`.`kelas` as `kelas_siswa`, `tc`.*
+FROM `tbl_siswa` `ts`
+JOIN `tbl_crm` `tc` ON `tc`.`id_referensi` = `ts`.`id_siswa`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:23:13 --> mysqli_sql_exception: Unknown column 'tc.id_referensi' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tw`.`na...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tw`.`na...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tw`.`na...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`na...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:23:13 --> Unknown column 'tc.id_referensi' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`nama` as `nama_wali`, `ts`.`nama` as `nama_siswa`, `ts`.`kelas` as `kelas_siswa`, `tc`.*
+FROM `tbl_siswa` `ts`
+LEFT JOIN `tbl_wali` `tw` ON `tc`.`id_referensi` = `tw`.`id_wali`
+JOIN `tbl_crm` `tc` ON `tc`.`id_referensi` = `ts`.`id_siswa`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:23:31 --> mysqli_sql_exception: Unknown column 'ts.id_wali' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tw`.`na...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tw`.`na...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tw`.`na...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`na...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:23:31 --> Unknown column 'ts.id_wali' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`nama` as `nama_wali`, `ts`.`nama` as `nama_siswa`, `ts`.`kelas` as `kelas_siswa`, `tc`.*
+FROM `tbl_siswa` `ts`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `ts`.`id_wali`
+JOIN `tbl_crm` `tc` ON `tc`.`id_referensi` = `ts`.`id_siswa`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 17:24:00 --> mysqli_sql_exception: Unknown column 'tc.id_referensi' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tw`.`na...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tw`.`na...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tw`.`na...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`na...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 17:24:00 --> Unknown column 'tc.id_referensi' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tw`.`nama` as `nama_wali`, `ts`.`nama` as `nama_siswa`, `ts`.`kelas` as `kelas_siswa`, `tc`.*
+FROM `tbl_siswa` `ts`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+JOIN `tbl_crm` `tc` ON `tc`.`id_referensi` = `ts`.`id_siswa`', [], false)
+ 2 APPPATH\Models\ModelCrm.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(29): App\Models\ModelCrm->get_all_data()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:29:04 --> Undefined array key "nama_siswa"
+in APPPATH\Views\Crm\Crm.php on line 37.
+ 1 APPPATH\Views\Crm\Crm.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 37)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(44): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 17:53:05 --> Undefined array key "nama"
+in APPPATH\Views\profile_data.php on line 17.
+ 1 APPPATH\Views\profile_data.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile_data.php', 17)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile_data.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile_data', [], true)
+ 5 APPPATH\Controllers\Auth.php(242): view('profile_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile_data()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:08:21 --> Undefined array key "status"
+in APPPATH\Views\profile_data.php on line 31.
+ 1 APPPATH\Views\profile_data.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile_data.php', 31)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile_data.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile_data', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile_data', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile_data('7')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 18:59:42 --> Undefined array key "nip"
+in APPPATH\Views\profile.php on line 54.
+ 1 APPPATH\Views\profile.php(54): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nip"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 54)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:01:36 --> Undefined array key "nama_siswa"
+in APPPATH\Views\profile.php on line 70.
+ 1 APPPATH\Views\profile.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:03:01 --> Cannot use object of type stdClass as array
+in APPPATH\Views\profile.php on line 66.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 4 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:06:00 --> Undefined array key "nama_siswa"
+in APPPATH\Views\profile.php on line 70.
+ 1 APPPATH\Views\profile.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:06:18 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:07:18 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:07:24 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:07:29 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:07:29 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:07:35 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:08:53 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::where()
+in APPPATH\Models\ModelWali.php on line 72.
+ 1 APPPATH\Controllers\Auth.php(254): App\Models\Modelwali->get_waliBy_id('14')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:08:57 --> Undefined array key "nama"
+in APPPATH\Views\profile.php on line 66.
+ 1 APPPATH\Views\profile.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:09:27 --> Undefined array key "nama_siswa"
+in APPPATH\Views\profile.php on line 70.
+ 1 APPPATH\Views\profile.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\profile.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('profile', [], true)
+ 5 APPPATH\Controllers\Auth.php(259): view('profile', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:11:56 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::getRow_array()
+in APPPATH\Models\ModelWali.php on line 72.
+ 1 APPPATH\Controllers\Auth.php(254): App\Models\Modelwali->get_waliBy_id('14')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:12:14 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::Row_array()
+in APPPATH\Models\ModelWali.php on line 72.
+ 1 APPPATH\Controllers\Auth.php(254): App\Models\Modelwali->get_waliBy_id('14')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->profile('14')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:24:16 --> Class "App\Libraries\ModelWali" not found
+in APPPATH\Libraries\AuthLibrary.php on line 20.
+ 1 APPPATH\Controllers\Auth.php(20): App\Libraries\AuthLibrary->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Auth->__construct()
+ 3 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:24:55 --> Undefined variable $userModel
+in APPPATH\Libraries\AuthLibrary.php on line 117.
+ 1 APPPATH\Libraries\AuthLibrary.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 117)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('3301027107850004')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:30:20 --> Undefined array key "nama"
+in APPPATH\Views\Crm\Crm.php on line 39.
+ 1 APPPATH\Views\Crm\Crm.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 39)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(44): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:31:30 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:34:39 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:35:31 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:35:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:35:52 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:35:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:36:50 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:36:51 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:36:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:37:56 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:37:58 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:38:24 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:38:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('51')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:38:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:40:31 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:40:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:41:32 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:41:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:47:38 --> Cannot use object of type stdClass as array
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 4 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:48:08 --> Trying to access array offset on value of type null
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:50:45 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 19:50:46 --> Undefined array key "nama"
+in APPPATH\Views\Crm\detail.php on line 92.
+ 1 APPPATH\Views\Crm\detail.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 92)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(106): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-06-25 19:56:18 --> mysqli_sql_exception: Table 'ta.tbl_user' doesn't exist in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tc`.*, ...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tc`.*, ...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tc`.*, ...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tc`.*, ...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(173): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(101): App\Models\ModelCrm->get_crmBy_id('54')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-06-25 19:56:18 --> Table 'ta.tbl_user' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tc`.*, COALESCE(ts.nama, tw.nama) as nama, `tu`.`role` as `role`
+FROM `tbl_crm` `tc`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+LEFT JOIN `tbl_user` `tu` ON `tu`.`id_referensi` = `tc`.`id_referensi`
+WHERE `tc`.`id_crm` = :tc.id_crm:', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(173): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(101): App\Models\ModelCrm->get_crmBy_id('54')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('54')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 20:34:20 --> Undefined property: App\Controllers\CrmController::$ModelWali
+in APPPATH\Controllers\CrmController.php on line 39.
+ 1 APPPATH\Controllers\CrmController.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CrmController::$ModelWali', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 39)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 20:45:41 --> Undefined array key "kelas"
+in APPPATH\Libraries\AuthLibrary.php on line 128.
+ 1 APPPATH\Libraries\AuthLibrary.php(128): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas"', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 128)
+ 2 APPPATH\Libraries\AuthLibrary.php(38): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(75): App\Libraries\AuthLibrary->LoginUser('3301022008820004')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
