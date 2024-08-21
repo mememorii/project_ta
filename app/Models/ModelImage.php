@@ -15,7 +15,7 @@ class ModelImage extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id','id_crm','filename', 'filepath','type'];
+    protected $allowedFields    = ['id_image','id_feedback','filename', 'filepath','type'];
 
     // Dates
     protected $useTimestamps = false;

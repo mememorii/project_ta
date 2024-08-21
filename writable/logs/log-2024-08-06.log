@@ -1,0 +1,33 @@
+CRITICAL - 2024-08-06 11:00:37 --> Undefined array key "nisn_siswa"
+in APPPATH\Views\Wali\edit.php on line 60.
+ 1 APPPATH\Views\Wali\edit.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nisn_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 60)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(105): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('3301020000000000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-06 11:01:48 --> Undefined array key "nisn_siswa"
+in APPPATH\Views\Wali\edit.php on line 66.
+ 1 APPPATH\Views\Wali\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nisn_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(105): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('3301020000000000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-06 11:01:59 --> Undefined array key "nisn_siswa"
+in APPPATH\Views\Wali\edit.php on line 70.
+ 1 APPPATH\Views\Wali\edit.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nisn_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php', 70)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/edit', [], true)
+ 5 APPPATH\Controllers\WaliController.php(105): view('Wali/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->edit('3301020000000000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

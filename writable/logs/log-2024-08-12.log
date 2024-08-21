@@ -1,0 +1,42 @@
+CRITICAL - 2024-08-12 11:23:15 --> Undefined array key "status"
+in APPPATH\Controllers\Auth.php on line 57.
+ 1 APPPATH\Controllers\Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 57)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-12 11:26:17 --> Undefined array key "status"
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 APPPATH\Controllers\Auth.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-12 11:26:42 --> Undefined array key "status"
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 APPPATH\Controllers\Auth.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-12 11:27:29 --> Undefined array key "status"
+in APPPATH\Controllers\Auth.php on line 59.
+ 1 APPPATH\Controllers\Auth.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 59)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-12 11:53:02 --> Undefined array key "status"
+in APPPATH\Controllers\Auth.php on line 65.
+ 1 APPPATH\Controllers\Auth.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-12 11:55:51 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::first()
+in APPPATH\Models\ModelWali.php on line 105.
+ 1 APPPATH\Controllers\Auth.php(64): App\Models\Modelwali->getNotActive('3301201609940001')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

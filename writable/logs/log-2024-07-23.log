@@ -1,0 +1,106 @@
+CRITICAL - 2024-07-23 12:48:52 --> Undefined variable $selectedKategori
+in APPPATH\Views\Crm\CrmUser.php on line 30.
+ 1 APPPATH\Views\Crm\CrmUser.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedKategori', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\CrmUser.php', 30)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\CrmUser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/CrmUser', [], true)
+ 5 APPPATH\Controllers\CrmController.php(86): view('Crm/CrmUser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-23 12:56:49 --> Undefined array key "responder"
+in APPPATH\Views\Crm\CrmUser.php on line 82.
+ 1 APPPATH\Views\Crm\CrmUser.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "responder"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\CrmUser.php', 82)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\CrmUser.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/CrmUser', [], true)
+ 5 APPPATH\Controllers\CrmController.php(87): view('Crm/CrmUser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-23 13:05:10 --> Undefined variable $kategori
+in APPPATH\Models\ModelCrm.php on line 267.
+ 1 APPPATH\Models\ModelCrm.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 267)
+ 2 APPPATH\Controllers\CrmController.php(72): App\Models\ModelCrm->getDataByKategoriUser('Ruang Kelas', '0161281523')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-23 13:05:43 --> Undefined variable $kategori
+in APPPATH\Models\ModelCrm.php on line 267.
+ 1 APPPATH\Models\ModelCrm.php(267): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategori', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 267)
+ 2 APPPATH\Controllers\CrmController.php(72): App\Models\ModelCrm->getDataByKategoriUser('Kamar Mandi', '0161281523')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-23 15:47:21 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelKomentar.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(114): App\Models\ModelKomentar->readKomentar(Array, '199006062022212...')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->detail('137')
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-23 15:47:21 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_komentar` `tk`
+LEFT JOIN `tbl_crm` `tc` ON `tc`.`id_crm` = `tk`.`id_crm`
+WHERE `tk`.`id_crm` = :tk.id_crm:
+AND `tc`.`id_referensi` = :tc.id_referensi:', [...], false)
+ 2 APPPATH\Models\ModelKomentar.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(114): App\Models\ModelKomentar->readKomentar([...], '199006062022212011')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('137')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-23 15:48:27 --> mysqli_sql_exception: Illegal parameter data types int and row for operation '=' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelKomentar.php(89): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(114): App\Models\ModelKomentar->readKomentar(Array, '199006062022212...')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->detail('137')
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-23 15:48:27 --> Illegal parameter data types int and row for operation '='
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_komentar` `tk`
+LEFT JOIN `tbl_crm` `tc` ON `tc`.`id_crm` = `tk`.`id_crm`
+WHERE `tk`.`id_crm` = :tk.id_crm:
+AND `tc`.`id_referensi` = :tc.id_referensi:', [...], false)
+ 2 APPPATH\Models\ModelKomentar.php(89): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(114): App\Models\ModelKomentar->readKomentar([...], '199006062022212011')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('137')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-23 15:51:26 --> Undefined array key "id_komentar"
+in APPPATH\Controllers\CrmController.php on line 115.
+ 1 APPPATH\Controllers\CrmController.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_komentar"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('137')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-23 15:52:19 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Model.php on line 380.
+ 1 SYSTEMPATH\BaseModel.php(949): CodeIgniter\Model->doUpdate([], [...])
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([], [...])
+ 3 APPPATH\Controllers\CrmController.php(115): CodeIgniter\Model->update([], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('137')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

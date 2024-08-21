@@ -10,12 +10,12 @@ class ModelSiswa extends Model
     public $db;
     protected $DBGroup          = 'default';
     protected $table            = 'tbl_siswa';
-    protected $primaryKey       = 'id_siswa';
+    protected $primaryKey       = 'nisn';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_siswa','kelas','nama','nipd','jk','nisn','tempat_lahir','tanggal_lahir','nik','agama','alamat','rt','rw','kelurahan','rombel', 'status'];
+    protected $allowedFields    = ['nisn', 'kelas','nama','nipd','jenis_kelamin', 'tempat_lahir','tanggal_lahir','nik','agama','alamat','rt','rw','kelurahan','rombel', 'status'];
 
     // Dates
     protected $useTimestamps = false;
@@ -60,11 +60,8 @@ class ModelSiswa extends Model
     function get_didikBy_id($id)
     {
         $builder = $this->builder();
-        $allData = $builder->select('*')->where('id_siswa',$id)->get()->getRow();
+        $allData = $builder->select('*')->where('nisn',$id)->get()->getRow();
         return $allData;
-    }
-    public function getData($year){
-        return $this->db->table('tbl_siswa')->where('tanggal_lahir',$year)->get()->getResult();
     }
 
     public function getByKelas()
@@ -75,12 +72,12 @@ class ModelSiswa extends Model
                       ->getResultArray();
 
         $jumlahSiswa = [
-            'Satu' => 0,
-            'Dua' => 0,
-            'Tiga' => 0,
-            'Empat' => 0,
-            'Lima' => 0,
-            'Enam' => 0,
+            1 => 0,
+            2 => 0,
+            3 => 0,
+            4 => 0,
+            5 => 0,
+            6 => 0,
         ];
 
         foreach ($query as $row) {
@@ -102,4 +99,5 @@ class ModelSiswa extends Model
                     ->where(['id' => $idReferensi])
                     ->first();
     }
+  
 }

@@ -8,7 +8,7 @@
             <h3 class="card-title">Form Edit Data</h3>
           </div>
           <form action="<?= base_url() ?>guru/update" method="post" id="form">
-            <input type="hidden" name="id_guru" value="<?= $guru['id_guru'] ?>">
+            <input type="hidden" name="id_data" value="<?= $guru['nip'] ?>">
             <div class="card-body">
               <div class="form-group">
                 <label>Nama</label>
@@ -18,8 +18,8 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <label>Jenis Kelamin</label>
-                      <select class="form-control" style="width: 100%;" name="jk" id="jk" required>
-                        <option selected="selected" value="<?= $guru['jk'] ?>" hidden><?= $guru['jk'] ?></option>
+                      <select class="form-control" style="width: 100%;" name="jenis_kelamin" id="jenis_kelamin" required>
+                        <option selected="selected" value="<?= $guru['jenis_kelamin'] ?>" hidden><?= $guru['jenis_kelamin'] ?></option>
                         <option value="Laki Laki">Laki Laki</option>
                         <option value="Perempuan">Perempuan</option>
                       </select>
@@ -78,13 +78,32 @@
                   <div class="form-group">
                       <label>Guru Kelas</label>
                       <select class="form-control" style="width: 100%;" name="guru_kelas" id="guru_kelas" onchange="updateRombel()">
-                        <option selected="selected" value="<?= $guru['guru_kelas'] ?>" hidden><?= $guru['guru_kelas'] ?></option>
-                        <option value="Satu">Satu</option>
-                        <option value="Dua">Dua</option>
-                        <option value="Tiga">Tiga</option>
-                        <option value="Empat">Empat</option>
-                        <option value="Lima">Lima</option>
-                        <option value="Enam">Enam</option>
+                        <option value="">Guru Mata pelajaran</option>
+                        <option selected="selected" value="<?= $guru['guru_kelas'] ?>" hidden>
+                          <?php 
+                            if($guru['guru_kelas'] == 1){
+                                echo"Satu";
+                            }elseif($guru['guru_kelas'] == 2){
+                                echo"Dua";
+                            }elseif($guru['guru_kelas'] == 3){
+                                echo"Tiga";
+                            }elseif($guru['guru_kelas'] == 4){
+                                echo"Empat";
+                            }elseif($guru['guru_kelas'] == 5){
+                                echo"Lima";
+                            }elseif($guru['guru_kelas'] == 6){
+                                echo"Enam";
+                            }else{
+                              echo"Guru Mata Pelajaran";
+                            }   
+                          ?>
+                        </option>
+                        <option value="1">Satu</option>
+                        <option value="2">Dua</option>
+                        <option value="3">Tiga</option>
+                        <option value="4">Empat</option>
+                        <option value="5">Lima</option>
+                        <option value="6">Enam</option>
                       </select>
                   </div>
                 </div>
@@ -92,9 +111,13 @@
                   <div class="form-group">
                       <label>Rombel</label>
                       <select class="form-control" style="width: 100%;" name="rombel" id="rombel" disabled>
-                        <option selected="selected" value="<?= $guru['rombel'] ?>" selected hidden><?= $guru['rombel'] ?></option>
-                          <option value="A">A</option>
-                          <option value="B">B</option>
+                        <?php if($guru['rombel'] == ""){ ?>
+                          <option selected="selected" value="" selected hidden>-</option>
+                        <?php }else{ ?>
+                          <option selected="selected" value="<?= $guru['rombel'] ?>" selected hidden><?= $guru['rombel'] ?></option>
+                        <?php } ?>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
                       </select>
                   </div>
                 </div>
@@ -108,136 +131,14 @@
       </div>
     </div>
   </div>
-  <script>
-     document.addEventListener('DOMContentLoaded', function() {
-        // Select the element with id 'rombel'
-        var rombel = document.getElementById('rombel');
-
-        // Disable the rombel element
-        rombel.disabled = false;
-    });
-      function updateRombel() {
-        var kelas = document.getElementById("guru_kelas").value;
-        var rombel = document.getElementById("rombel");
-
-        // Clear existing options
-        rombel.innerHTML = '<option value="" hidden>Pilih Rombel</option>';
-
-        if (kelas === "Satu") {
-
-            rombel.disabled = false; // Enable rombel select
-            var optionA = document.createElement("option");
-            optionA.value = "A";
-            optionA.text = "A";
-            rombel.appendChild(optionA);
-
-            var optionB = document.createElement("option");
-            optionB.value = "B";
-            optionB.text = "B";
-            rombel.appendChild(optionB);
-        } else if (kelas === "Empat") {
-            rombel.disabled = false; // Enable rombel select
-            var optionA = document.createElement("option");
-            optionA.value = "A";
-            optionA.text = "A";
-            rombel.appendChild(optionA);
-
-            var optionB = document.createElement("option");
-            optionB.value = "B";
-            optionB.text = "B";
-            rombel.appendChild(optionB);
-        } else if (kelas === "Lima") {
-            rombel.disabled = false; // Enable rombel select
-            var optionA = document.createElement("option");
-            optionA.value = "A";
-            optionA.text = "A";
-            rombel.appendChild(optionA);
-
-            var optionB = document.createElement("option");
-            optionB.value = "B";
-            optionB.text = "B";
-            rombel.appendChild(optionB);
-        }else if (kelas === "Enam") {
-            rombel.disabled = false; // Enable rombel select
-            var optionA = document.createElement("option");
-            optionA.value = "A";
-            optionA.text = "A";
-            rombel.appendChild(optionA);
-
-            var optionB = document.createElement("option");
-            optionB.value = "B";
-            optionB.text = "B";
-            rombel.appendChild(optionB);
-        } else {
-            rombel.disabled = true; // Disable rombel select
-        }
-        // You can add more conditions for other classes if needed
-      }
-  </script>
-   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const form = document.getElementById('form');
-  
-      form.addEventListener('submit', function(event) {
-          event.preventDefault();
-          
-          // Ambil nilai input
-          const nama = document.getElementById('nama').value;
-          const nik = document.getElementById('nik').value;
-          const nip = document.getElementById('nip').value;
-          // Validasi karakter minimal
-          if (nama.length < 3) {
-              Swal.fire({
-                  icon: 'error',
-                  title: 'Error!',
-                  text: 'Nama harus memiliki minimal 3 karakter.',
-              });
-          } else if(nama.length > 60) {
-              // Proses form jika valid
-              Swal.fire({
-                  icon: 'error',
-                  title: 'Error!',
-                  text: 'Nama tidak boleh memiliki lebih dari 60 karakter.',
-              });
-          }else if(nip.length > 18 || nip.length < 18) {
-              // Proses form jika valid
-              Swal.fire({
-                  icon: 'error',
-                  title: 'Error!',
-                  text: 'NIP harus memiliki 18 karakter.',
-              }); 
-          }else if(nik.length < 16 || nik.length > 16) {
-              // Proses form jika valid
-              Swal.fire({
-                  icon: 'error',
-                  title: 'Error!',
-                  text: 'NIK harus memiliki 16 karakter.',
-              });
-          } else {
-              // Proses form jika valid
-            
-                event.preventDefault(); 
-
-                const href = this.getAttribute('href');
-
-                Swal.fire({
-                    title: 'Apakah Data Yang Dimasukkan Benar?',
-                    icon: 'warning',
-                    showCancelButton: true,
-                    confirmButtonColor: '#28a745',
-                    cancelButtonColor: '#d33',
-                    cancelButtonText: 'Tidak',
-                    confirmButtonText: 'Iya'
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                      form.submit(); 
-                    }
-                });
-          
-      
-            
-          }
-    });
-});
-</script>
+  <script src="<?= base_url()?>public/assets/dist/js/editGuru.js"></script>
+  <?php if(session()->getFlashdata('error')) { ?>
+    <script>
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        confirmButtonColor:'#7bb3ff',
+        text: '<?= session()->getFlashdata('error') ?>',})
+    </script>
+  <?php } ?>
 <?= $this->endSection()?>

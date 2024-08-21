@@ -1,0 +1,16 @@
+CRITICAL - 2024-07-27 19:38:06 --> Too few arguments to function App\Models\ModelCrm::get_all_dataResponden(), 1 passed in C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php on line 56 and exactly 2 expected
+in APPPATH\Models\ModelCrm.php on line 64.
+ 1 APPPATH\Controllers\CrmController.php(56): App\Models\ModelCrm->get_all_dataResponden('199006062022212011')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-27 20:53:00 --> syntax error, unexpected token "endif"
+in APPPATH\Views\dashboard\DashboardUser.php on line 413.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Dashboard/DashboardUser', [], true)
+ 3 APPPATH\Controllers\DashboardController.php(104): view('Dashboard/DashboardUser', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

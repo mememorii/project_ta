@@ -17,8 +17,8 @@
               <div class="col-md-3">  
                   <div class="form-group">
                     <label>Jenis Kelamin</label>
-                    <select class="form-control" style="width: 100%;" name="jk" id="jk" required>
-                      <option selected="selected" hidden disabled>Pilih Jenis Kelamin</option>
+                    <select class="form-control" style="width: 100%;" name="jenis_kelamin" id="jenis_kelamin" required>
+                      <option value="" selected="selected" hidden disabled>Pilih Jenis Kelamin</option>
                       <option value="Laki Laki">Laki Laki</option>
                       <option value="Perempuan">Perempuan</option>
                     </select>
@@ -44,11 +44,15 @@
                 </div>
               </div>
               <div class="form-group">
+                <label>Alamat</label>
+                <textarea name="alamat" id="alamat" rows="4" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
                 <label>Siswa</label>
-                <select class="form-control select2" style="width: 100%;" name="id_siswa" id="id_siswa" required>
-                  <option hidden disabled selected>Pilih Siswa</option>
+                <select class="form-control select2" style="width: 100%;" name="nisn_siswa" id="nisn_siswa" required>
+                  <option value="" hidden disabled selected>Pilih Siswa</option>
                   <?php foreach($getData as $value) { ?>
-                      <option value="<?= $value['id_siswa'] ?>" data-kelas="<?= $value['kelas'] ?>" data-rombel="<?= $value['rombel'] ?>">
+                      <option value="<?= $value['nisn'] ?>" data-kelas="<?= $value['kelas'] ?>" data-rombel="<?= $value['rombel'] ?>">
                         <?= $value['nama'] ?>
                       </option>
                   <?php } ?> 
@@ -65,76 +69,14 @@
       </div>
     </div>       
   </div>
-  <script>
-    $(document).ready(function() {
-        $('#id_siswa').change(function() {
-            var selectedOption = $(this).find('option:selected');
-            
-            var kelas = selectedOption.data('kelas');
-            var rombel = selectedOption.data('rombel');
-
-            $('#kelas').val(kelas);
-            $('#rombel').val(rombel);
+  <script src="<?= base_url()?>public/assets/dist/js/addWali.js"></script>
+  <?php if(session()->getFlashdata('error')): ?>
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: '<?= session()->getFlashdata('error') ?>',
         });
-    });
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('form');
- 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        // Ambil nilai input
-        const nama = document.getElementById('nama').value;
-        const nik = document.getElementById('nik').value;
-
-        // Validasi karakter minimal
-        if (nama.length < 3) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'Nama harus memiliki minimal 3 karakter.',
-            });
-        } else if(nama.length > 60) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'Nama tidak boleh memiliki lebih dari 60 karakter.',
-            });
-        } else if(nik.length < 16 || nik.length > 16) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'NIK harus memiliki 16 karakter.',
-            });
-        } else {
-            // Proses form jika valid
-          
-              event.preventDefault(); 
-
-              const href = this.getAttribute('href');
-
-              Swal.fire({
-                  title: 'Apakah Data Yang Dimasukkan Benar?',
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#28a745',
-                  cancelButtonColor: '#d33',
-                  cancelButtonText: 'Tidak',
-                  confirmButtonText: 'Iya'
-              }).then((result) => {
-                  if (result.isConfirmed) {
-                    form.submit(); 
-                  }
-              });
-         
-     
-           
-        }
-    });
-});
-</script>
+    </script>
+<?php endif; ?>
 <?= $this->endSection()?>

@@ -2,35 +2,82 @@
 .light{
     background-color:#7bb3ff;
 }
-.navbar{
-    
+/* styles.css */
+@media (max-width: 767px) {
+    .dropdown-button {
+        display: block; /* Tampilkan tombol dropdown pada layar ukuran smartphone */
+    }
 }
+
+@media (min-width: 768px) {
+    .dropdown-button {
+        display: none; /* Sembunyikan tombol dropdown pada layar ukuran lebih besar */
+    }
+}
+/* styles.css */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display: block;}
+
 </style>
 
-<div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 text-white" style="background-color:#0d3b66;">
+<div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 text-white" style="background-color:#0d3b66;">
   <div class="relative flex items-center justify-between">
     <div class="flex items-center">
       <?php if (session()->get('role') == 3){ ?>
-        <a href="<?= base_url('siswa/dashboard') ?>" aria-label="Company" title="Company" class="inline-flex items-center mr-8">
+        <a href="<?= base_url('siswa/dashboard') ?>" aria-label="Company"  class="inline-flex items-center mr-8">
       <?php }elseif(session()->get('role') == 4){ ?>
-        <a href="<?= base_url('wali/dashboard') ?>" aria-label="Company" title="Company" class="inline-flex items-center mr-8">
+        <a href="<?= base_url('wali/dashboard') ?>" aria-label="Company"  class="inline-flex items-center mr-8">
       <?php }?>
           <div class="logo">
             <img src="<?= base_url()?>public/assets/dist/img/83790f2b43f00be.png" alt="TUT WURI HANDAYANI Logo" class="h-16 w-auto">
           </div>
-          <span class="ml-2 text-xl font-bold tracking-wide uppercase">SIPESANTIK</span>
+          <span class="ml-2 text-xl font-bold tracking-wide uppercase">SDN Kuripan Kidul 04</span>
         </a>
+        <div class="dropdown">
+          <button class="dropdown-button">Menu</button>
+          <div class="dropdown-content">
+            <?php if (session()->get('role') == 3){ ?>
+              <a href="<?= base_url('siswa/crm') ?>" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Feedback</a>
+            <?php }elseif(session()->get('role') == 4){ ?>
+              <a href="<?= base_url('wali/crm') ?>" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Feedback</a>
+            <?php }?>
+            <a href="<?= base_url () ?>user/profile/<?= session()->get('id_referensi') ?>" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Profile</a>
+            <a href="<?= base_url('logout') ?>" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Logout</a>
+          </div>
+        </div>
       <ul class="flex items-center hidden space-x-8 lg:flex">
         <?php if (session()->get('role') == 3){ ?>
-            <li><a href="<?= base_url('siswa/dashboard') ?>" aria-label="Our product" title="Our product" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
+            <li><a href="<?= base_url('siswa/dashboard') ?>" id="homeNav" aria-label="Our product" title="Our product" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
         <?php }elseif(session()->get('role') == 4){ ?>
-            <li><a href="<?= base_url('wali/dashboard') ?>" aria-label="Our product" title="Our product" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
+            <li><a href="<?= base_url('wali/dashboard') ?>" id="homeNav" aria-label="Our product" title="Our product" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Home</a></li>
         <?php }?>
         <li>
           <?php if (session()->get('role') == 3){ ?>
-            <a href="<?= base_url('siswa/crm') ?>" aria-label="Our product" title="Our product" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Feedback</a>
+            <a href="<?= base_url('siswa/crm') ?>" id="feedNav" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Feedback</a>
           <?php }elseif(session()->get('role') == 4){ ?>
-            <a href="<?= base_url('wali/crm') ?>" aria-label="Our product" title="Our product" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Feedback</a>
+            <a href="<?= base_url('wali/crm') ?>" id="feedNav" class="font-medium tracking-wide transition-colors duration-200 hover:text-deep-purple-accent-400">Feedback</a>
           <?php }?>
         </li>
       </ul>
@@ -40,6 +87,7 @@
             <?php if(session()->role == 3){ ?>
                 <a
                 href="<?= base_url("siswa/crm/create") ?>"
+                id="openNav"
                 class="light inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md ocus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
@@ -49,6 +97,7 @@
             <?php }else{ ?>
                 <a
                 href="<?= base_url("wali/crm/create") ?>"
+                id="openNav"
                 class="light inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md ocus:shadow-outline focus:outline-none"
                 aria-label="Sign up"
                 title="Sign up"
@@ -58,7 +107,7 @@
             <?php } ?>
         </li>
         <li>
-          <div class="relative inline-block text-left">
+          <div class="relative inline-block text-left" id="profileNav">
             <div>
               <button type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50" id="menu-button" aria-expanded="false" aria-haspopup="true">
                 <?= session()->get('nama') ?>
@@ -99,3 +148,15 @@
       });
     });
   </script>
+   <script>
+    // script.js
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.dropdown-button');
+    const content = document.querySelector('.dropdown-content');
+    
+    button.addEventListener('click', function() {
+        content.classList.toggle('show');
+    });
+});
+
+</script>

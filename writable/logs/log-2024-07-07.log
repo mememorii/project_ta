@@ -1,0 +1,150 @@
+ERROR - 2024-07-07 20:39:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(tanggal) = '2024-07-07'
+AND COALESCE(ts.kelas, tw.kelas_siswa) = 'Satu'
+AND ...' at line 5 in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(190): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-07 20:39:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(tanggal) = '2024-07-07'
+AND COALESCE(ts.kelas, tw.kelas_siswa) = 'Satu'
+AND ...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_crm` `tc`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+WHERE DATETIME(tanggal) = :DATETIME(tanggal):
+AND COALESCE(ts.kelas, tw.kelas_siswa) = :COALESCE(ts.kelas, tw.kelas_siswa):
+AND COALESCE(ts.rombel, tw.rombel_siswa) = :COALESCE(ts.rombel, tw.rombel_siswa):', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(190): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-07 21:26:24 --> Undefined variable $checked
+in APPPATH\Views\Crm\detail.php on line 77.
+ 1 APPPATH\Views\Crm\detail.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $checked', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 5 APPPATH\Controllers\CrmController.php(114): view('Crm/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('118')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-07 21:26:55 --> syntax error, unexpected single-quoted string ">", expecting "," or ";"
+in APPPATH\Views\Crm\detail.php on line 77.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/detail', [], true)
+ 3 APPPATH\Controllers\CrmController.php(114): view('Crm/detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('118')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-07 21:46:30 --> Undefined variable $crm
+in APPPATH\Controllers\CrmController.php on line 121.
+ 1 APPPATH\Controllers\CrmController.php(121): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crm', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 121)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('118')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-07 22:17:33 --> mysqli_sql_exception: FUNCTION tc.DATE does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(190): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-07 22:17:33 --> FUNCTION tc.DATE does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_crm` `tc`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+WHERE tc.DATE(tanggal) = :tc.DATE(tanggal):
+AND COALESCE(ts.kelas, tw.kelas_siswa) = :COALESCE(ts.kelas, tw.kelas_siswa):
+AND COALESCE(ts.rombel, tw.rombel_siswa) = :COALESCE(ts.rombel, tw.rombel_siswa):', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(190): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-07 22:17:39 --> mysqli_sql_exception: FUNCTION tc.DATE does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(190): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-07 22:17:39 --> FUNCTION tc.DATE does not exist. Check the 'Function Name Parsing and Resolution' section in the Reference Manual
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_crm` `tc`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+WHERE tc. DATE(tanggal) = :tc. DATE(tanggal):
+AND COALESCE(ts.kelas, tw.kelas_siswa) = :COALESCE(ts.kelas, tw.kelas_siswa):
+AND COALESCE(ts.rombel, tw.rombel_siswa) = :COALESCE(ts.rombel, tw.rombel_siswa):', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(190): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-07 22:19:55 --> Too few arguments to function App\Models\ModelCrm::getTicketsCreatedToday(), 2 passed in C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php on line 44 and exactly 3 expected
+in APPPATH\Models\ModelCrm.php on line 181.
+ 1 APPPATH\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-07 22:57:10 --> mysqli_sql_exception: Unknown column 'tc.id_referensi' in 'on clause' in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(191): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-07 22:57:10 --> Unknown column 'tc.id_referensi' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_crm`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+WHERE `tanggal` >= :tanggal:
+AND COALESCE(ts.kelas,tw.kelas_siswa) = :COALESCE(ts.kelas,tw.kelas_siswa):
+AND COALESCE(ts.rombel, tw.rombel_siswa) = :COALESCE(ts.rombel, tw.rombel_siswa):', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(191): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 3 APPPATH\Controllers\DashboardController.php(44): App\Models\ModelCrm->getTicketsCreatedToday('Satu', 'A')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

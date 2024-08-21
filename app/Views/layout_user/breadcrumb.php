@@ -1,7 +1,8 @@
-<div class="content-header">
+
+  <div class="content-header phone">
       <div class="container">
         <?php if (isset($back)): ?>
-          <a href="javascript:history.back()" class="btn btn-primary"><i class="nav-icon fa-solid fa-circle-chevron-left"></i><span class="ml-2">Kembali</span></a><br><br>
+          <a href="<?= base_url() ?><?= $back ?>" id="kembali" class="btn btn-primary"><i class="nav-icon fa-solid fa-circle-chevron-left"></i><span class="ml-2">Kembali</span></a><br><br>
         <?php endif; ?>
         <div class="row mb-2">
           <div class="col-sm-6">

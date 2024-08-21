@@ -242,5 +242,5 @@ class Auth extends BaseConfig
      *
      * @var string
      */
-    public $resetEmailSubject = 'Reset Your Password';
+    public $resetEmailSubject = 'Kode Reset Password Akun SIPESANTIK';
 }

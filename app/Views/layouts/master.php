@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
@@ -28,10 +29,10 @@
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  <link rel="stylesheet" href="<?= base_url()?>public/assets/dist/css/adminlte.min.css">
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
   <script src="<?= base_url()?>public/assets/plugins/jquery/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.all.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
@@ -40,6 +41,24 @@
   <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn-primary {
+        color: #fff;
+        background-color: #7bb3ff !important;
+        border-color: #007bff;
+        box-shadow: none;
+    }
+    @media (max-width: 767px) {
+    .phone {
+      display: flex; /* Ubah elemen row menjadi flex container */
+      flex-direction: column; /* Atur arah flex menjadi kolom *//* Sembunyikan breadcrumb pada layar ukuran smartphone */
+    }
+    .phone > * {
+        flex: 1 1 100%; /* Setiap anak elemen di dalam row mengambil 100% lebar */
+        max-width: 100%; /* Pastikan lebar maksimum 100% */
+    }
+  }
+</style>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
   <div class="wrapper">
@@ -81,8 +100,10 @@
   </script>
   <!-- Bootstrap 4 -->
   <script src="<?= base_url()?>public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
   <!-- ChartJS -->
   <script src="<?= base_url()?>public/assets/plugins/chart.js/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
   <!-- Sparkline -->
   <script src="<?= base_url()?>public/assets/plugins/sparklines/sparkline.js"></script>
   <!-- JQVMap -->
@@ -117,14 +138,47 @@
   <script src="<?= base_url()?>public/assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
   <script src="<?= base_url()?>public/assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
   <script src="<?= base_url()?>public/assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-
   <!-- Bootstrap Switch -->
   <script src="<?= base_url()?>public/assets/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
   <!-- BS-Stepper -->
   <script src="<?= base_url()?>public/assets/plugins/bs-stepper/js/bs-stepper.min.js"></script>
   <!-- dropzonejs -->
   <script src="<?= base_url()?>public/assets/plugins/dropzone/min/dropzone.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Initialize DataTables with your preferred settings
+      $('#example1').DataTable({
+          "paging": true,
+          "lengthChange": true,
+          "searching": true,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false,
+          "responsive": true,
+          "columnDefs": [
+              { "targets": [1], "orderData": [1] } // Use data-order attribute for sorting the second column (Class)
+          ]
+      });
 
+      $('#example2').DataTable({
+          "paging": true,
+          "lengthChange": true,
+          "searching": true,
+          "ordering": true,
+          "info": true,
+          "autoWidth": false,
+          "responsive": true,
+          "columnDefs": [
+              { "targets": [1], "orderData": [1] } // Use data-order attribute for sorting the second column (Class)
+          ]
+      });
+
+      // Redraw the table when the tab is shown
+      $('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+          $.fn.dataTable.tables({ visible: true, api: true }).columns.adjust();
+      });
+    });
+  </script>
   <script>
     $(function () {
       //Initialize Select2 Elements
@@ -205,60 +259,34 @@
     document.addEventListener('DOMContentLoaded', function () {
       window.stepper = new Stepper(document.querySelector('.bs-stepper'))
     })
-
-    // DropzoneJS Demo Code Start
-    Dropzone.autoDiscover = false
-
-    // Get the template HTML and remove it from the doumenthe template HTML and remove it from the doument
-    var previewNode = document.querySelector("#template")
-    previewNode.id = ""
-    var previewTemplate = previewNode.parentNode.innerHTML
-    previewNode.parentNode.removeChild(previewNode)
-
-    var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-      url: "/target-url", // Set the url
-      thumbnailWidth: 80,
-      thumbnailHeight: 80,
-      parallelUploads: 20,
-      previewTemplate: previewTemplate,
-      autoQueue: false, // Make sure the files aren't queued until manually added
-      previewsContainer: "#previews", // Define the container to display the previews
-      clickable: ".fileinput-button" // Define the element that should be used as click trigger to select files.
-    })
-
-    myDropzone.on("addedfile", function(file) {
-      // Hookup the start button
-      file.previewElement.querySelector(".start").onclick = function() { myDropzone.enqueueFile(file) }
-    })
-
-    // Update the total progress bar
-    myDropzone.on("totaluploadprogress", function(progress) {
-      document.querySelector("#total-progress .progress-bar").style.width = progress + "%"
-    })
-
-    myDropzone.on("sending", function(file) {
-      // Show the total progress bar when upload starts
-      document.querySelector("#total-progress").style.opacity = "1"
-      // And disable the start button
-      file.previewElement.querySelector(".start").setAttribute("disabled", "disabled")
-    })
-
-    // Hide the total progress bar when nothing's uploading anymore
-    myDropzone.on("queuecomplete", function(progress) {
-      document.querySelector("#total-progress").style.opacity = "0"
-    })
-
-    // Setup the buttons for all transfers
-    // The "add files" button doesn't need to be setup because the config
-    // `clickable` has already been specified.
-    document.querySelector("#actions .start").onclick = function() {
-      myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED))
-    }
-    document.querySelector("#actions .cancel").onclick = function() {
-      myDropzone.removeAllFiles(true)
-    }
-    // DropzoneJS Demo Code End
   </script>
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const konfirmasiButtons = document.querySelectorAll('.konfirmasi');
 
+      konfirmasiButtons.forEach(button => {
+          button.addEventListener('click', function(event) {
+              event.preventDefault(); 
+
+              const href = this.getAttribute('href');
+
+              Swal.fire({
+                  title: 'Apakah anda yakin?',
+                  text: "Data Tidak Akan Bisa Dikembalikan",
+                  icon: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#28a745',
+                  cancelButtonColor: '#d33',
+                  cancelButtonText: 'Tidak',
+                  confirmButtonText: 'Iya'
+              }).then((result) => {
+                  if (result.isConfirmed) {
+                      window.location.href = href; 
+                  }
+              });
+          });
+      });
+  });
+</script>
 </body>
 </html>

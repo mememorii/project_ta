@@ -1,0 +1,528 @@
+CRITICAL - 2024-07-06 05:38:18 --> Call to a member function isValid() on null
+in APPPATH\Controllers\CrmController.php on line 184.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 05:40:15 --> Call to a member function getRandomName() on null
+in APPPATH\Controllers\CrmController.php on line 188.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 05:40:47 --> Call to a member function getClientName() on null
+in APPPATH\Controllers\CrmController.php on line 188.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->upload()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:37:47 --> Class "App\Controllers\Dompdf" not found
+in APPPATH\Controllers\SiswaController.php on line 194.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:38:09 --> Invalid file: "pdf_template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_template.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pdf_template', [], true)
+ 3 APPPATH\Controllers\SiswaController.php(198): view('pdf_template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:39:23 --> Invalid file: "pdf_template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_template.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pdf_template', [], true)
+ 3 APPPATH\Controllers\SiswaController.php(198): view('pdf_template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:47:43 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(198): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:48:39 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(203): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:53:57 --> Invalid file: "pdf_template.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pdf_template.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('pdf_template', [], true)
+ 3 APPPATH\Controllers\SiswaController.php(203): view('pdf_template', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:55:01 --> Undefined array key 0
+in APPPATH\Views\layouts\pdf_template.php on line 51.
+ 1 APPPATH\Views\layouts\pdf_template.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 0', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 51)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(205): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:56:32 --> Call to undefined function extend()
+in APPPATH\Views\layouts\pdf_template.php on line 1.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 4 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:56:53 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 07:57:41 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:00:00 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:03:05 --> Cannot access offset of type string on string
+in APPPATH\Views\layouts\pdf_template.php on line 7.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 4 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:03:34 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:03:37 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:04:24 --> Undefined variable $header
+in APPPATH\Views\layouts\pdf_template.php on line 6.
+ 1 APPPATH\Views\layouts\pdf_template.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $header', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:04:34 --> Undefined array key "nama"
+in APPPATH\Views\layouts\pdf_template.php on line 6.
+ 1 APPPATH\Views\layouts\pdf_template.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:05:24 --> Undefined array key "nama"
+in APPPATH\Views\layouts\pdf_template.php on line 6.
+ 1 APPPATH\Views\layouts\pdf_template.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:05:42 --> Undefined variable $siswa
+in APPPATH\Views\layouts\pdf_template.php on line 6.
+ 1 APPPATH\Views\layouts\pdf_template.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:06:06 --> Undefined array key "nama"
+in APPPATH\Views\layouts\pdf_template.php on line 6.
+ 1 APPPATH\Views\layouts\pdf_template.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:06:24 --> Attempt to read property "nama" on array
+in APPPATH\Views\layouts\pdf_template.php on line 6.
+ 1 APPPATH\Views\layouts\pdf_template.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "nama" on array', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\pdf_template.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:07:39 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+ 6 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 08:07:57 --> Undefined variable $menu
+in APPPATH\Views\layouts\sidebar.php on line 34.
+ 1 APPPATH\Views\layouts\sidebar.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\sidebar.php', 34)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\sidebar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(469): CodeIgniter\View\View->render('layouts/sidebar', null, true)
+ 5 APPPATH\Views\layouts\master.php(51): CodeIgniter\View\View->include('layouts/sidebar')
+ 6 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 7 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 9 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('layouts/pdf_template', [], true)
+10 APPPATH\Controllers\SiswaController.php(202): view('layouts/pdf_template', [...])
+11 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->exportToPdf('13859')
+12 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+13 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 09:04:21 --> Call to undefined function get()
+in APPPATH\Views\Wali\detail.php on line 25.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/detail', [], true)
+ 4 APPPATH\Controllers\WaliController.php(97): view('Wali/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->detail('20513')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 09:04:31 --> Undefined property: App\Controllers\WaliController::$ModelCrm
+in APPPATH\Controllers\WaliController.php on line 134.
+ 1 APPPATH\Controllers\WaliController.php(134): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\WaliController::$ModelCrm', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\WaliController.php', 134)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->exportToPdf('20513')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 09:05:10 --> Class "App\Controllers\Dompdf" not found
+in APPPATH\Controllers\WaliController.php on line 149.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->exportToPdf('20513')
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 09:08:21 --> Undefined array key "tempat_lahir"
+in APPPATH\Controllers\GuruController.php on line 208.
+ 1 APPPATH\Controllers\GuruController.php(208): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tempat_lahir"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\GuruController.php', 208)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->exportAll()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 10:26:40 --> Too few arguments to function App\Models\ModelCrm::getStatusCounts(), 0 passed in C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php on line 28 and exactly 1 expected
+in APPPATH\Models\ModelCrm.php on line 119.
+ 1 APPPATH\Controllers\DashboardController.php(28): App\Models\ModelCrm->getStatusCounts()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 10:29:19 --> mysqli_sql_exception: Column 'status' in field list is ambiguous in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tc`.*, ...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tc`.*, ...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tc`.*, ...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tc`.*, ...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(129): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(29): App\Models\ModelCrm->getStatusCounts('Empat', NULL)
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 10:29:19 --> Column 'status' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tc`.*, COALESCE(ts.kelas, tw.kelas_siswa) as kelas, COALESCE(ts.rombel, tw.rombel_siswa) as rombel, `status`, COUNT(*) as total
+FROM `tbl_crm` `tc`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+WHERE `kelas` = :kelas:
+AND `rombel` IS NULL
+GROUP BY `status`', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(129): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\DashboardController.php(29): App\Models\ModelCrm->getStatusCounts('Empat', null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 10:38:20 --> Too few arguments to function App\Models\ModelCrm::getTicketsCreatedToday(), 0 passed in C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php on line 38 and exactly 2 expected
+in APPPATH\Models\ModelCrm.php on line 177.
+ 1 APPPATH\Controllers\DashboardController.php(38): App\Models\ModelCrm->getTicketsCreatedToday()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 10:38:35 --> Call to undefined method CodeIgniter\Database\MySQLi\Result::countAllResults()
+in APPPATH\Models\ModelCrm.php on line 187.
+ 1 APPPATH\Controllers\DashboardController.php(38): App\Models\ModelCrm->getTicketsCreatedToday('Empat', 'B')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 10:49:59 --> Undefined variable $session
+in APPPATH\Views\dashboard\dashboard.php on line 3.
+ 1 APPPATH\Views\dashboard\dashboard.php(3): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php', 3)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Dashboard/Dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(55): view('Dashboard/Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 10:52:54 --> Undefined array key "total"
+in APPPATH\Models\ModelCrm.php on line 139.
+ 1 APPPATH\Models\ModelCrm.php(139): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 139)
+ 2 APPPATH\Controllers\DashboardController.php(29): App\Models\ModelCrm->getStatusCounts('Satu', 'A')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 10:53:52 --> Call to undefined method App\Models\ModelCrm::getStatusCounts
+in SYSTEMPATH\Model.php on line 873.
+ 1 APPPATH\Controllers\DashboardController.php(29): CodeIgniter\Model->__call('getStatusCounts', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 11:04:12 --> Too few arguments to function App\Models\ModelCrm::count_closedTicketsByKelas(), 1 passed in C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php on line 42 and exactly 2 expected
+in APPPATH\Models\ModelCrm.php on line 98.
+ 1 APPPATH\Controllers\DashboardController.php(42): App\Models\ModelCrm->count_closedTicketsByKelas('Satu')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 11:08:48 --> Undefined variable $kelas
+in APPPATH\Models\ModelCrm.php on line 206.
+ 1 APPPATH\Models\ModelCrm.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kelas', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 206)
+ 2 APPPATH\Controllers\CrmController.php(39): App\Models\ModelCrm->getDataByStatus('closed', 'Satu', 'A')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-06 11:08:58 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as kelas = 'Satu'
+AND COALESCE(ts.rombel, tw.rombel_siswa) as rombel = 'A'
+AN...' at line 5 in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `tc`.*, ...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tc`.*, ...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tc`.*, ...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tc`.*, ...', Array, false)
+#4 C:\xampp\htdocs\project_ta\app\Models\ModelCrm.php(209): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php(39): App\Models\ModelCrm->getDataByStatus('closed', 'Satu', 'A')
+#6 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\CrmController->index()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-06 11:08:58 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'as kelas = 'Satu'
+AND COALESCE(ts.rombel, tw.rombel_siswa) as rombel = 'A'
+AN...' at line 5
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `tc`.*, COALESCE(ts.nama, tw.nama) as nama
+FROM `tbl_crm` `tc`
+LEFT JOIN `tbl_siswa` `ts` ON `ts`.`id_siswa` = `tc`.`id_referensi`
+LEFT JOIN `tbl_wali` `tw` ON `tw`.`id_wali` = `tc`.`id_referensi`
+WHERE COALESCE(ts.kelas,tw.kelas_siswa) as kelas = :COALESCE(ts.kelas,tw.kelas_siswa) as kelas:
+AND COALESCE(ts.rombel, tw.rombel_siswa) as rombel = :COALESCE(ts.rombel, tw.rombel_siswa) as rombel:
+AND `tc`.`status` = :tc.status:', [...], false)
+ 2 APPPATH\Models\ModelCrm.php(209): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\CrmController.php(39): App\Models\ModelCrm->getDataByStatus('closed', 'Satu', 'A')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 11:09:43 --> Undefined array key "kelas_siswa"
+in APPPATH\Views\Crm\Crm.php on line 33.
+ 1 APPPATH\Views\Crm\Crm.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "kelas_siswa"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 33)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(53): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 11:41:30 --> Undefined array key 4
+in APPPATH\Controllers\DashboardController.php on line 55.
+ 1 APPPATH\Controllers\DashboardController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 11:41:59 --> Undefined array key 4
+in APPPATH\Controllers\DashboardController.php on line 55.
+ 1 APPPATH\Controllers\DashboardController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key 4', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 55)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 11:57:47 --> Undefined variable $rating
+in APPPATH\Views\dashboard\dashboard.php on line 244.
+ 1 APPPATH\Views\dashboard\dashboard.php(244): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rating', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php', 244)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\dashboard\\dashboard.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Dashboard/Dashboard', [], true)
+ 5 APPPATH\Controllers\DashboardController.php(61): view('Dashboard/Dashboard', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:32:14 --> Too few arguments to function App\Models\ModelCrm::get_all_data(), 0 passed in C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php on line 67 and exactly 2 expected
+in APPPATH\Models\ModelCrm.php on line 50.
+ 1 APPPATH\Controllers\DashboardController.php(67): App\Models\ModelCrm->get_all_data()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:35:09 --> Too few arguments to function App\Models\ModelCrm::getDataByStatus(), 1 passed in C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php on line 64 and exactly 3 expected
+in APPPATH\Models\ModelCrm.php on line 201.
+ 1 APPPATH\Controllers\CrmController.php(64): App\Models\ModelCrm->getDataByStatus('open')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:39:03 --> Call to a member function where() on null
+in APPPATH\Models\ModelCrm.php on line 222.
+ 1 APPPATH\Controllers\CrmController.php(64): App\Models\ModelCrm->getUserCrm('open')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:39:05 --> Call to a member function where() on null
+in APPPATH\Models\ModelCrm.php on line 222.
+ 1 APPPATH\Controllers\CrmController.php(64): App\Models\ModelCrm->getUserCrm('open')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:40:38 --> Call to undefined method stdClass::where()
+in APPPATH\Models\ModelCrm.php on line 222.
+ 1 APPPATH\Controllers\CrmController.php(65): App\Models\ModelCrm->getUserCrm('13872', 'open')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:41:04 --> Cannot access offset of type string on string
+in APPPATH\Views\Crm\CrmUser.php on line 38.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/CrmUser', [], true)
+ 4 APPPATH\Controllers\CrmController.php(80): view('Crm/CrmUser', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:41:32 --> Cannot access offset of type string on string
+in APPPATH\Views\Crm\CrmUser.php on line 40.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/CrmUser', [], true)
+ 4 APPPATH\Controllers\CrmController.php(80): view('Crm/CrmUser', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 14:41:34 --> Cannot access offset of type string on string
+in APPPATH\Views\Crm\CrmUser.php on line 40.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/CrmUser', [], true)
+ 4 APPPATH\Controllers\CrmController.php(80): view('Crm/CrmUser', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 17:29:47 --> Too few arguments to function App\Models\ModelCrm::get_all_data(), 0 passed in C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php on line 245 and exactly 2 expected
+in APPPATH\Models\ModelCrm.php on line 50.
+ 1 APPPATH\Controllers\CrmController.php(245): App\Models\ModelCrm->get_all_data()
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->exportAll()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-06 20:03:41 --> Undefined variable $rombel
+in APPPATH\Models\ModelCrm.php on line 94.
+ 1 APPPATH\Models\ModelCrm.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $rombel', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 94)
+ 2 APPPATH\Controllers\DashboardController.php(47): App\Models\ModelCrm->count_openTicketsByKelas('Satu')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

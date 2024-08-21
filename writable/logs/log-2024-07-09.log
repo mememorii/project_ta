@@ -1,0 +1,135 @@
+CRITICAL - 2024-07-09 14:09:03 --> Undefined constant "admin"
+in APPPATH\Views\User\detail.php on line 23.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('User/detail', [], true)
+ 4 APPPATH\Controllers\Auth.php(79): view('User/detail', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->detail('104')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 16:24:54 --> Undefined variable $value
+in APPPATH\Views\Guru\detail.php on line 23.
+ 1 APPPATH\Views\Guru\detail.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php', 23)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/detail', [], true)
+ 5 APPPATH\Controllers\GuruController.php(91): view('Guru/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 16:32:05 --> Undefined array key "rombel"
+in APPPATH\Views\Wali\Wali.php on line 53.
+ 1 APPPATH\Views\Wali\Wali.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rombel"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\Wali.php', 53)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\Wali.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/Wali', [], true)
+ 5 APPPATH\Controllers\WaliController.php(34): view('Wali/Wali', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 16:34:59 --> Undefined variable $value
+in APPPATH\Views\Guru\detail.php on line 43.
+ 1 APPPATH\Views\Guru\detail.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php', 43)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/detail', [], true)
+ 5 APPPATH\Controllers\GuruController.php(91): view('Guru/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->detail('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 16:52:16 --> Undefined variable $nik
+in APPPATH\Controllers\WaliController.php on line 141.
+ 1 APPPATH\Controllers\WaliController.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nik', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\WaliController.php', 141)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 17:51:47 --> Call to a member function where() on int
+in APPPATH\Models\ModelWali.php on line 90.
+ 1 APPPATH\Controllers\WaliController.php(141): App\Models\Modelwali->editCek('20513')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->update()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 17:55:24 --> The route for "wali/edit/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('wali/edit/')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\WaliController.php(160): redirect('wali/edit/', '20513')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 17:57:10 --> The route for "wali/edit/" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('wali/edit/')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\WaliController.php(160): redirect('wali/edit/', '20513')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 17:57:26 --> syntax error, unexpected variable "$idCek", expecting ")"
+in APPPATH\Controllers\WaliController.php on line 147.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\WaliController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\WaliController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\WaliController')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\WaliController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 17:59:06 --> The route for "wali/edit/20513" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('wali/edit/20513')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\WaliController.php(160): redirect('wali/edit/20513')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 18:00:23 --> The route for "/wali/edit/20513" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/wali/edit/20513')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\WaliController.php(160): redirect('/wali/edit/20513')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->update()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 18:32:07 --> Undefined variable $value
+in APPPATH\Views\Siswa\edit.php on line 63.
+ 1 APPPATH\Views\Siswa\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $value', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Siswa\\edit.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Siswa\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Siswa/edit', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(113): view('Siswa/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->edit('13859')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 19:25:19 --> Undefined variable $siswa
+in APPPATH\Views\Guru\edit.php on line 83.
+ 1 APPPATH\Views\Guru\edit.php(83): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $siswa', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\edit.php', 83)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Guru\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Guru/edit', [], true)
+ 5 APPPATH\Controllers\GuruController.php(104): view('Guru/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\GuruController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\GuruController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-09 20:35:39 --> Undefined array key "rombel"
+in APPPATH\Views\Wali\detail.php on line 22.
+ 1 APPPATH\Views\Wali\detail.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "rombel"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php', 22)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/detail', [], true)
+ 5 APPPATH\Controllers\WaliController.php(116): view('Wali/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->detail('20529')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

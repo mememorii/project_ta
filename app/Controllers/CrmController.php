@@ -24,103 +24,261 @@ class CrmController extends BaseController
         $this->ModelSiswa = new \App\Models\ModelSiswa();
         $this->Session = session();	
     }
-
+    public function tab()
+    {   
+        $data= [
+            'title' => '',
+            'menu' => '',
+        ];
+        return view('Crm/tab', $data);
+    }
     // tampil data 
     public function index()
     {   
-        
-        $status = $this->request->getGet('status');
-
-        if ($status === 'all') {
-            $crmData = $this->ModelCrm->get_all_data(); // Retrieve all data
-        } else {
-            $status = $status ?? 'open'; // Default to 'open' if no status is provided
-            $crmData = $this->ModelCrm->getDataByStatus($status); // Filter by status
+        // $id_referensi = $crm['id_referensi'];
+        // $id_feedback = $crm['id_feedback'];
+        $userAktif = session()->get('id_referensi');
+        $status = $this->request->getGet('status') ?? 'all';
+        $kategori = $this->request->getGet('kategori') ?? 'Semua';
+        if($status === 'all' && $kategori === 'Semua') {
+            $crmData = $this->ModelCrm->get_all_data(); 
+        }elseif($status === 'all' && $kategori !== 'Semua'){
+            $crmData = $this->ModelCrm->getDataByKategori($kategori);
+        }elseif($status !== 'all' && $kategori === 'Semua'){
+            $crmData = $this->ModelCrm->getDataByStatus($status);
+        }else{
+            $crmData = $this->ModelCrm->getDataByStatusAndKategori($status, $kategori);
         }
+
+        $status2 = $this->request->getGet('status2') ?? 'all';
+        $kategori2 = $this->request->getGet('kategori2') ?? 'Semua';
+        if($status2 === 'all' && $kategori2 === 'Semua') {
+            $crmData2 = $this->ModelCrm->get_all_dataResponden($userAktif); 
+        }elseif($status2 === 'all' && $kategori2 !== 'Semua'){
+            $crmData2 = $this->ModelCrm->getDataByKategoriResponden($kategori2, $userAktif);
+        }elseif($status2 !== 'all' && $kategori2 === 'Semua'){
+            $crmData2 = $this->ModelCrm->getDataByStatusResponden($status2, $userAktif);
+        }else{
+            $crmData2 = $this->ModelCrm->getDataByStatusAndKategoriResponden($status2, $kategori2, $userAktif);
+        }
+
+        
 
         $data=[
             'title' => 'Feedback',
             'menu'=> 'Feedback',
             'crmData' => $crmData,
+            'crmData2' => $crmData2,
             'siswa' => $this->ModelSiswa->get_all_data(),
             'wali' => $this->ModelWali->get_all_data(),
             'selectedStatus' => $status,
-           
+            'selectedKategori' => $kategori,
+            'selectedStatus2' => $status2,
+            'selectedKategori2' => $kategori2,
         ];
-       
 
         return view ('Crm/crm',$data);
     }
 
     public function index_user()
     {   
-        $status = $this->request->getGet('status');
+        // $id_responden = $crm['responden'];
+        // $id_feedback = $crm['id_feedback'];
+        $id_referensi = session()->get('id_referensi');
+        $status = $this->request->getGet('status') ?? 'all';
+        $kategori = $this->request->getGet('kategori') ?? 'Semua';
 
-        if ($status === 'all') {
-            $crmData = $this->ModelCrm->findAll(); // Retrieve all data
-        } else {
-            $status = $status ?? 'open'; // Default to 'open' if no status is provided
-            $crmData = $this->ModelCrm->getDataByStatus($status); // Filter by status
+        // if($status === 'all' && $kategori === 'Semua') {
+        //     $crmData = $this->ModelCrm->get_all_dataUser($id_referensi);
+        // }elseif($status === 'all' && $kategori !== 'Semua'){
+        //     $crmData = $this->ModelCrm->getDataByKategoriUser($kategori, $id_referensi);
+        // }elseif($status !== 'all' && $kategori === 'Semua'){
+        //     $crmData = $this->ModelCrm->getDataByStatusUser($status, $id_referensi);
+        // }else{
+        //     $crmData = $this->ModelCrm->getDataByStatusAndKategoriUser($status, $kategori, $id_referensi);
+        // }
+
+        if($status === 'all' && $kategori === 'Semua') {
+            $crmData = $this->ModelCrm->get_all_dataUser($id_referensi); 
+        }elseif($status === 'all' && $kategori !== 'Semua'){
+            $crmData = $this->ModelCrm->getDataByKategoriUser($kategori, $id_referensi);
+        }elseif($status !== 'all' && $kategori === 'Semua'){
+            $crmData = $this->ModelCrm->getDataByStatusUser($status, $id_referensi);
+        }else{
+            $crmData = $this->ModelCrm->getDataByStatusAndKategoriUser($status, $kategori, $id_referensi);
         }
 
-        // Get data based on status
-       
-
+        // $newKomentar = $this->ModelKomentar->newKomentarGuru($id_feedback, $id_responden);
+        
         $data=[
             'title' => 'Feedback',
             'menu'=> 'Feedback',
             'crmData' => $crmData,
-            'selectedStatus' => $status
-            //'getData' => $this-> ModelKritik ->get_all_data(),
+            'selectedStatus' => $status,
+            'selectedKategori' => $kategori,
+            // 'newKomentar' => $newKomentar
         ];
-       
-
+        
         return view ('Crm/CrmUser',$data);
     }
 
     // tampil form data
     public function create ()
     {
+        if(session()->get('role') == 2){
+            $back = 'crm';
+        }elseif(session()->get('role') == 3){
+            $back = 'siswa/crm';
+        }else{
+            $back = 'wali/crm';
+        }
         $data=[
             'title' => 'Feedback',
             'menu'=> 'Feedback',
-            'back'=> '',
+            'back'=> $back,
         ];
        
         return view('Crm/create',$data);
     }
 
     // tampil detail 
-    public function detail ($id = null)
+    public function detail ($id)
     {
+        $userAktif = session()->get('id_referensi');
+        $crm = $this->ModelCrm->get_crmBy_id($id);
+        $id_referensi = $crm['id_referensi'];
+        $id_feedback = $crm['id_feedback'];
+        $id_responden = $crm['responden'];
+
+        if(session()->get('role') == 2){
+            $getKomentar = $this->ModelKomentar->readKomentarUser($id_feedback, $id_referensi);
+        }else{
+            $getKomentar = $this->ModelKomentar->readKomentarGuru($id_feedback, $id_responden);
+        }
+        
+        if($crm['responden'] == $userAktif || $crm['id_referensi'] == session()->get('id_referensi'))
+        {
+            // Iterate over each comment and update it to mark as read
+            foreach ($getKomentar as $komentar) {
+                $this->ModelKomentar->update($komentar['id_komentar'], ['read' => '1']);
+            }
+        }
+        if($crm['rating'] == 5){
+            $label = 'Sangat Bagus';
+        }elseif($crm['rating'] == 4){
+            $label = 'Bagus';
+        }elseif($crm['rating'] == 3){
+            $label = 'Biasa';
+        }elseif($crm['rating'] == 2){
+            $label = 'Jelek';
+        }else{
+            $label = 'Sangat Jelek';
+        }
+
+        if(session()->get('role') == 2){
+            $back = 'crm';
+        }elseif(session()->get('role') == 3){
+            $back = 'siswa/crm';
+        }else{
+            $back = 'wali/crm';
+        }
+        $editData = session()->getFlashdata('edit_data');
         $data=[
             'title' => 'Feedback',
             'menu'=> 'Feedback',
-            'back'=>'',
-            'crm' => $this->ModelCrm->get_crmBy_id($id),
+            'back'=> $back,
+            'crm' => $crm,
+            'ratingLabel' => $label,
             'komentar' => $this->ModelKomentar->getDataTimeline($id),
-            'images' => $this->ModelImage->where('id_crm', $id)->findAll()
+            'images' => $this->ModelImage->where('id_feedback', $id)->findAll(),
+            'editData' => $editData,
         ];
         
         return view('Crm/detail',$data);
     }
 
+    public function upload_image()
+    {
+        $validated = $this->validate([
+            'upload' => [
+                'uploaded[upload]',
+                'mime_in[upload,image/jpg,image/jpeg,image/png]',
+                'max_size[upload,1024]',
+            ],
+        ]);
+
+        if($validated)
+        {
+            $file = $this->request->getFile('upload');
+            $fileName = $file->getRandomName();
+            $writePath = 'public/assets/dist/uploads';
+            $file->move($writePath, $fileName);
+            $data = [
+                "uploaded" => true,
+                "url" => base_url('public/assets/dist/uploads/'.$fileName),
+            ];
+        }else{
+            $data = [
+                "uploaded" => false,
+                "error" => [
+                    "messsages" => $file
+                ],
+            ];
+        }
+        
+        return $this->response->setJSON($data);
+    }
+
     // update 
     function update_komentar(){
-        $data['id_crm'] = $this->request->getPost('id_crm');
+        $data['id_feedback'] = $this->request->getPost('id_feedback');
         $data['notes'] = $this->request->getPost('komentar');
         $data['user_comment'] = $this->request->getPost('user_comment'); // disi menggunkana session login
 
         $this->ModelKomentar->insert($data);
 
-        return redirect()->to(site_url('crm/detail/'.$data['id_crm']));
+        return redirect()->to(site_url('crm/detail/'.$data['id_feedback']));
+    }
+
+    public function resolusi()
+    {   
+        $id_feedback = $this->request->getPost('id_feedback');
+        $data= [
+            'resolusi' => $this->request->getPost('resolusi'),
+        ];
+
+        $this->ModelCrm->update($id_feedback, $data);
+        session()->setFlashdata("success","Resolusi Feedback Berhasil Dikirim");
+        return redirect()->to(site_url('crm/detail/'.$id_feedback));
+    }
+
+    public function editResolusi($id)
+    {   
+        $data= [
+            'edit' => '1',
+        ];
+        session()->setFlashdata('edit_data', $data);
+        return redirect()->to(site_url('crm/detail/'.$id));
+    }
+
+    public function rating()
+    {
+        $id = $this->request->getPost('id_feedback');
+        $rating = $this->request->getPost('rating');
+        $this->ModelCrm->update($id, ['rating' => $rating]);
+
+        if ($this->Session->get('role') == 3) {
+            return redirect()->to('siswa/crm');
+        } else {
+            return redirect()->to('wali/crm');
+        }
     }
 
     public function close()
     {
-        $id = $this->request->getPost('id_crm');
-        $rating = $this->request->getPost('rating');
-        $this->ModelCrm->update($id, ['status' => 'closed', 'rating' => $rating]);
+        $id = $this->request->getPost('id_feedback');
+        session()->setFlashdata("success","Tiket Feedback Berhasil Ditutup");
+        $this->ModelCrm->update($id, ['status' => 'closed']);
        
         if ($this->Session->get('role') == 3) {
             return redirect()->to('siswa/crm');
@@ -130,12 +288,13 @@ class CrmController extends BaseController
     }
 
     // simpan saran kritik user
-    public function Userstore() {
+    public function Userstore() 
+    {
         $data = [
-            'id_crm' => $this->request->getPost('id_crm'),
             'id_referensi' => $this->request->getPost('id_referensi'),
             'judul' => $this->request->getPost('judul'),
             'deskripsi' => $this->request->getPost('deskripsi'),
+            'kategori' => $this->request->getPost('kategori'),
         ];
        
         $this->ModelCrm->insert($data);
@@ -154,10 +313,9 @@ class CrmController extends BaseController
                     $newName = $file->getRandomName();
                     $file->move('public/assets/dist/uploads', $newName);
                     $data = [
-                        'id_crm'  => $id,
+                        'id_feedback'  => $id,
                         'filename' => $file->getClientName(),
                         'filepath' => 'public/assets/dist/uploads/' . $newName,
-                        'type' => $file->getClientExtension()
                     ];
                     
                     $this->ModelImage->save($data);
@@ -167,35 +325,23 @@ class CrmController extends BaseController
             }
  
         }
- 
-        if($filesUploaded <= 0) {
-            return redirect()->back()->with('error', 'Choose files to upload.');
-        }
- 
-        return redirect()->back()->with('success', $filesUploaded . ' File/s uploaded successfully.');
-    }
-
-    // tampil alert
-    public function showSweetAlertMessages()
-    {
-        session()->setFlashdata("success","This is success message");
         
-        session()->setFlashdata("warning","This is warning message");
-
-        session()->setFlashdata("info","This is info message");
-
-        session()->setFlashdata("error","This is error message");
-
-        return view("sweetalert-notification");
+        session()->setFlashdata("success","Tiket Feedback Berhasil Dibuat");
+        if(session()->get('role') == 3){
+            return redirect('siswa/crm');
+        }else{
+            return redirect('wali/crm');
+        };
+        
     }
     
     public function comment_delete($id = null)
     {
-        $id_crm = $this->request->getGet('id_crm');
+        $id_feedback = $this->request->getGet('id_feedback');
         $this->ModelKomentar->delete($id);
-        session()->setFlashdata("success","This is success message");
+        session()->setFlashdata("success","Komentar Berhasil Dihapus");
         
-        return redirect()->to(site_url('crm/detail/'.$id_crm));
+        return redirect()->to(site_url('crm/detail/'.$id_feedback));
     }
 
     // delete data
@@ -204,6 +350,28 @@ class CrmController extends BaseController
         $this->ModelCrm->delete($id);
         session()->setFlashdata("success","This is success message");
         return redirect()->to('/crm');
+    }
+
+    public function respond()
+    {
+        $id_feedback = $this->request->getPost('id_feedback');
+        $data = [
+            'responden' => session()->get('id_referensi'),
+            'status' => 'progress',
+        ];
+
+        $this->ModelCrm->update($id_feedback,$data);
+        session()->setFlashdata("success","Anda Telah Menjadi Responden Feedback");
+        return redirect()->to('crm/detail/' . $id_feedback);
+    }
+
+    public function survey()
+    {
+        $data= [
+            'title' => '',
+            'menu' => '',
+        ];
+        return view('Crm/survey', $data);
     }
 
     public function cetak($id)
@@ -233,7 +401,7 @@ class CrmController extends BaseController
 
         // Simpan sebagai file Excel
         $writer = new Xlsx($spreadsheet);
-        $filename = 'user_' . $user['id_crm'] . '.xlsx';
+        $filename = 'user_' . $user['id_feedback'] . '.xlsx';
 
         // Set header untuk download file
         header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');

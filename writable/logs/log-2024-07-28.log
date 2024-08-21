@@ -1,0 +1,21 @@
+CRITICAL - 2024-07-28 04:17:19 --> Undefined variable $kategoriCounts
+in APPPATH\Controllers\DashboardController.php on line 65.
+ 1 APPPATH\Controllers\DashboardController.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kategoriCounts', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 65)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-28 04:34:36 --> Undefined array key "AdministrasiSekolah"
+in APPPATH\Controllers\DashboardController.php on line 72.
+ 1 APPPATH\Controllers\DashboardController.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "AdministrasiSekolah"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 72)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-28 05:01:19 --> Undefined variable $file
+in APPPATH\Controllers\CrmController.php on line 214.
+ 1 APPPATH\Controllers\CrmController.php(214): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $file', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 214)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->upload_image()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -10,12 +10,12 @@ class ModelGuru extends Model
     public $db;
     protected $DBGroup          = 'default';
     protected $table            = 'tbl_guru';
-    protected $primaryKey       = 'id_guru';
+    protected $primaryKey       = 'nip';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_guru', 'nip', 'nik','jabatan','nama','jk','pendidikan','pangkat','agama', 'guru_kelas', 'rombel'];
+    protected $allowedFields    = ['nip', 'nik','jabatan','nama','jenis_kelamin','pendidikan','pangkat','agama', 'guru_kelas', 'rombel'];
 
     // Dates
     protected $useTimestamps = false;
@@ -61,7 +61,7 @@ class ModelGuru extends Model
     {
         $builder = $this->builder();
         $allData = $builder->select('*')
-        ->where('id_guru',$id)
+        ->where('nip',$id)
         ->get()
         ->getRowArray();
         return $allData;

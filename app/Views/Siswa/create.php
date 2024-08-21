@@ -1,7 +1,5 @@
 <?= $this->extend('layouts/master') ?>
-
 <?= $this->section('content') ?>
-
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
@@ -19,7 +17,7 @@
                             <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Jenis Kelamin</label>
-                                    <select class="form-control" style="width: 100%;" name="jk" id="jk" required>
+                                    <select class="form-control" style="width: 100%;" name="jenis_kelamin" id="jenis_kelamin" required>
                                         <option value="" selected hidden disabled>Pilih Jenis Kelamin</option>
                                         <option value="Laki Laki">Laki Laki</option>
                                         <option value="Perempuan">Perempuan</option>
@@ -57,13 +55,13 @@
                                 <div class="form-group">
                                     <label>Kelas</label>
                                     <select class="form-control" style="width: 100%;" name="kelas" id="kelas" onchange="updateRombel()" required>
-                                        <option selected hidden>Pilih Kelas</option>
-                                        <option value="Satu">Satu</option>
-                                        <option value="Dua">Dua</option>
-                                        <option value="Tiga">Tiga</option>
-                                        <option value="Empat">Empat</option>
-                                        <option value="Lima">Lima</option>
-                                        <option value="Enam">Enam</option>
+                                        <option value="" selected hidden>Pilih Kelas</option>
+                                        <option value="1">Satu</option>
+                                        <option value="2">Dua</option>
+                                        <option value="3">Tiga</option>
+                                        <option value="4">Empat</option>
+                                        <option value="5">Lima</option>
+                                        <option value="6">Enam</option>
                                     </select>
                                 </div>
                             </div>
@@ -71,7 +69,7 @@
                                 <div class="form-group">
                                     <label>Rombel</label>
                                     <select class="form-control" style="width: 100%;" name="rombel" id="rombel" disabled required>
-                                        <option selected hidden>Pilih Rombel</option>
+                                        <option value="" selected hidden>Pilih Rombel</option>
                                         <option value="A">A</option>
                                         <option value="B">B</option>
                                     </select>
@@ -88,13 +86,13 @@
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>NIPD</label>
-                                    <input type="number" class="form-control" name="nipd" id="nipd" placeholder="Masukkan NIPD" required>
+                                    <input type="number" class="form-control" name="nipd" id="nipd" placeholder="Masukkan NIPD">
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <label>NISN</label>
-                                    <input type="number" class="form-control" name="nisn" id="nisn" placeholder="Masukkan NISN" required>
+                                    <input type="number" class="form-control" name="nisn" id="nisn" placeholder="Masukkan NISN">
                                 </div>
                             </div>
                         </div>    
@@ -130,137 +128,14 @@
             </div>
     </div>
 </div>
-<script>
-    function updateRombel() {
-                var kelas = document.getElementById("kelas").value;
-                var rombel = document.getElementById("rombel");
-
-                // Clear existing options
-                rombel.innerHTML = '<option value="" hidden>Pilih Rombel</option>';
-
-                if (kelas === "Satu") {
-
-                    rombel.disabled = false; // Enable rombel select
-                    var optionA = document.createElement("option");
-                    optionA.value = "A";
-                    optionA.text = "A";
-                    rombel.appendChild(optionA);
-
-                    var optionB = document.createElement("option");
-                    optionB.value = "B";
-                    optionB.text = "B";
-                    rombel.appendChild(optionB);
-                } else if (kelas === "Empat") {
-                    rombel.disabled = false; // Enable rombel select
-                    var optionA = document.createElement("option");
-                    optionA.value = "A";
-                    optionA.text = "A";
-                    rombel.appendChild(optionA);
-
-                    var optionB = document.createElement("option");
-                    optionB.value = "B";
-                    optionB.text = "B";
-                    rombel.appendChild(optionB);
-                } else if (kelas === "Lima") {
-                    rombel.disabled = false; // Enable rombel select
-                    var optionA = document.createElement("option");
-                    optionA.value = "A";
-                    optionA.text = "A";
-                    rombel.appendChild(optionA);
-
-                    var optionB = document.createElement("option");
-                    optionB.value = "B";
-                    optionB.text = "B";
-                    rombel.appendChild(optionB);
-                }else if (kelas === "Enam") {
-                    rombel.disabled = false; // Enable rombel select
-                    var optionA = document.createElement("option");
-                    optionA.value = "A";
-                    optionA.text = "A";
-                    rombel.appendChild(optionA);
-
-                    var optionB = document.createElement("option");
-                    optionB.value = "B";
-                    optionB.text = "B";
-                    rombel.appendChild(optionB);
-                } else {
-                    rombel.disabled = true; // Disable rombel select
-                }
-                // You can add more conditions for other classes if needed
-            }
-</script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('form');
- 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        // Ambil nilai input
-        const nama = document.getElementById('nama').value;
-        const nik = document.getElementById('nik').value;
-        const nisn = document.getElementById('nisn').value;
-        const nipd = document.getElementById('nipd').value;
-        // Validasi karakter minimal
-        if (nama.length < 3) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'Nama harus memiliki minimal 3 karakter.',
-            });
-        } else if(nama.length > 60) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'Nama tidak boleh memiliki karakter lebih dari 60.',
-            });
-        }else if(nisn.length > 10 || nisn.length < 10) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'NISN harus memiliki 10 karakter.',
-            });
-        }else if(nipd.length > 4 || nipd.length < 4) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'NIPD harus memiliki 4 karakter.',
-            });
-        }else if(nik.length < 16 || nik.length > 16) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'NIK harus memiliki 16 karakter.',
-            });
-        } else {
-            // Proses form jika valid
-          
-              event.preventDefault(); 
-
-              const href = this.getAttribute('href');
-
-              Swal.fire({
-                  title: 'Apakah Data Yang Dimasukkan Benar?',
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#28a745',
-                  cancelButtonColor: '#d33',
-                  cancelButtonText: 'Tidak',
-                  confirmButtonText: 'Iya'
-              }).then((result) => {
-                  if (result.isConfirmed) {
-                    form.submit(); 
-                  }
-              });
-         
-     
-           
-        }
-    });
-});
-</script>
+<script src="<?= base_url()?>public/assets/dist/js/addSiswa.js"></script>
+<?php if(session()->getFlashdata('error')): ?>
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error!',
+            text: '<?= session()->getFlashdata('error') ?>',
+        });
+    </script>
+<?php endif; ?>
 <?= $this->endSection()?>

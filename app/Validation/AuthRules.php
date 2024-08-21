@@ -38,6 +38,20 @@ class AuthRules
     }
 
     
+    public function validateExists1(string $str, string $fields, array $data)
+    {
+        $model = new AuthModel();
+        $user = $model->where('email', $data['email'])
+        ->first();
+
+        if (!$user) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    
 
 
 

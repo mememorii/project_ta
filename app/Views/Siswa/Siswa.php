@@ -9,8 +9,7 @@
       <div class="card-header">
         <?php if (session()->get('role') == '1') { ?>
           <a href="<?= base_url("/siswa/create") ?>"><button class="btn btn-primary"><i class="fa-solid fa-user-plus"></i><span class="ml-2">Tambah Data</span></button></a>
-        <?php }else{} ?>
-        <a href="<?= base_url() ?>siswa/all/export" class="btn btn-primary"><i class="fa-solid fa-print" style=""></i><span class="ml-2">Cetak Data</span></a>
+        <?php } ?>
       </div>
       <div class="card-body">
         <table id="example1" class="table table-bordered table-striped">
@@ -18,6 +17,7 @@
             <tr>
               <th>Nomor</th>
               <th>Nama</th>
+              <th>NIK</th>
               <th>Jenis Kelamin</th>
               <th>Kelas</th>
               <th>Rombel</th>
@@ -32,9 +32,32 @@
               <tr>
                 <td><?=$no++?></td>
                 <td><?=$value['nama'] ?></td>
-                <td><?=$value['jk'] ?></td>
-                <td><?=$value['kelas'] ?></td>
-                <td><?=$value['rombel' ?? '-' ] ?></td>
+                <td><?=$value['nik'] ?></td>
+                <td><?=$value['jenis_kelamin'] ?></td>
+                <td data-order="<?= $value['kelas'] ?>">
+                  <?php 
+                    if($value['kelas'] == 1){
+                      echo"Satu";
+                    }elseif($value['kelas'] == 2){
+                      echo"Dua";
+                    }elseif($value['kelas'] == 3){
+                      echo"Tiga";
+                    }elseif($value['kelas'] == 4){
+                      echo"Empat";
+                    }elseif($value['kelas'] == 5){
+                      echo"Lima";
+                    }else{
+                      echo"Enam";
+                    }   
+                  ?>
+                </td>
+                <td>
+                    <?php if($value['rombel'] != "A" && $value['rombel'] != "B"){
+                      echo"-";
+                    }else{ 
+                      echo$value['rombel']; 
+                    } ?> 
+                </td>
                 <td style="text-align: center;vertical-align: middle;">
                     <?php if($value['status'] == 'Aktif'){ ?>
                       <span class="badge badge-success">Aktif</span>
@@ -44,11 +67,11 @@
                 </td>
                 <td>
                 <?php if (session()->get('role') == '1') {  ?>
-                  <a href="<?= base_url() ?>admin/siswa/detail/<?= $value['id_siswa'] ?>" class="btn btn-sm btn-primary"><i class="fa-solid fa-circle-info"></i></a>
-                  <a href="<?= base_url() ?>siswa/delete/<?= $value['id_siswa'] ?>" class="btn btn-sm btn-danger konfirmasi"><i class="fas fa-trash" ></i></a>
-                  <a href="<?= base_url() ?>siswa/edit/<?= $value['id_siswa'] ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
+                  <a href="<?= base_url() ?>admin/siswa/detail/<?= $value['nisn'] ?>" class="btn btn-sm btn-primary mb-1"><i class="fa-solid fa-circle-info"></i></a>
+                  <a href="<?= base_url() ?>siswa/delete/<?= $value['nisn'] ?>" class="btn btn-sm btn-danger konfirmasi mb-1"><i class="fas fa-trash" ></i></a>
+                  <a href="<?= base_url() ?>siswa/edit/<?= $value['nisn'] ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit"></i></a>
                 <?php }else{ ?>
-                  <a href="<?= base_url() ?>guru/siswa/detail/<?= $value['id_siswa'] ?>" class="btn btn-sm btn-primary"><i class="fa-solid fa-circle-info"></i></a>
+                  <a href="<?= base_url() ?>guru/siswa/detail/<?= $value['nisn'] ?>" class="btn btn-sm btn-primary"><i class="fa-solid fa-circle-info"></i></a>
                 <?php } ?>
                 </td>
               </tr>
@@ -63,24 +86,8 @@
     </div>
   </div>
 </div>
-
 <script>
-  $(function () {
-    $('#example1').DataTable({
-      "paging": true,
-      "lengthChange": true,
-      "searching": true,
-      "ordering": true,
-      "info": true,
-      "autoWidth": false,
-      "responsive": true,
-    });
-  });
-</script>
-<script>
-  $(function(){
-
-    <?php if(session()->has("success")){ ?>
+  <?php if(session()->has("success")){ ?>
     Swal.fire({
       icon:'success',
       title:'Sukses',
@@ -88,34 +95,5 @@
       text: '<?= session("success") ?>'
     })
   <?php } ?>
-  });
 </script>
-<script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-      const konfirmasiButtons = document.querySelectorAll('.konfirmasi');
-
-      konfirmasiButtons.forEach(button => {
-          button.addEventListener('click', function(event) {
-              event.preventDefault(); 
-
-              const href = this.getAttribute('href');
-
-              Swal.fire({
-                  title: 'Apakah anda yakin?',
-                  text: "Data Tidak Akan Bisa Dikembalikan",
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#28a745',
-                  cancelButtonColor: '#d33',
-                  cancelButtonText: 'Tidak',
-                  confirmButtonText: 'Iya'
-              }).then((result) => {
-                  if (result.isConfirmed) {
-                      window.location.href = href; 
-                  }
-              });
-          });
-      });
-  });
-</script>
-              <?= $this->endSection()?>
+<?= $this->endSection()?>

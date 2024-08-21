@@ -10,12 +10,12 @@ class Modelwali extends Model
     public $db;
     protected $DBGroup          = 'default';
     protected $table            = 'tbl_wali';
-    protected $primaryKey       = 'id_wali';
+    protected $primaryKey       = 'nik';
     protected $useAutoIncrement = true;
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['id_wali', 'id_siswa','jk','nik','nama','pekerjaan', 'pendidikan', 'kelas_siswa', 'rombel_siswa'];
+    protected $allowedFields    = ['nik', 'nisn_siswa','jenis_kelamin','nama','pekerjaan', 'pendidikan', 'alamat', 'kelas_siswa', 'rombel_siswa'];
 
     // Dates
     protected $useTimestamps = false;
@@ -52,7 +52,7 @@ class Modelwali extends Model
         $builder = $this->builder();
         $query = $this->db->table('tbl_wali tw')
         ->select('tw.*, ts.nama as nama_siswa')
-        ->join('tbl_siswa ts', 'ts.id_siswa = tw.id_siswa')
+        ->join('tbl_siswa ts', 'ts.nisn = tw.nisn_siswa')
         ->get()
         ->getResultArray();
 
@@ -66,8 +66,8 @@ class Modelwali extends Model
         $builder = $this->builder();
         $query = $this->db->table('tbl_wali tw')
         ->select('tw.*, ts.nama as nama_siswa')
-        ->join('tbl_siswa ts', 'ts.id_siswa = tw.id_siswa')
-        ->where('tw.id_wali', $id)
+        ->join('tbl_siswa ts', 'ts.nisn = tw.nisn_siswa')
+        ->where('tw.nik', $id)
         ->get()
         ->getRowArray();
 
@@ -81,5 +81,32 @@ class Modelwali extends Model
         $builder = $this->builder();
         $allData = $builder->select('*')->countAllResults();
         return $allData;
+    }
+
+    function editCek($idCek)
+    {
+        $builder = $this->builder();
+        $query = $builder->select('*')
+        ->where('nik', $idCek)
+        ->get()
+        ->getRowArray();
+
+        return $query;
+        
+    }
+    
+    public function getNotActive($nik)
+    {
+        $builder = $this->builder();
+        $query = $this->db->table('tbl_wali tw')
+                ->select('tw.*, ts.status as status')
+                ->join('tbl_siswa ts', 'ts.nisn = tw.nisn_siswa')
+                ->where('tw.nik', $nik)
+                ->where('ts.status', 'Tidak Aktif')
+                ->get()
+                ->getRowArray();
+        
+        return $query;
+        
     }
 }

@@ -1,0 +1,105 @@
+CRITICAL - 2024-07-22 13:20:43 --> Undefined property: App\Controllers\CrmController::$requset
+in APPPATH\Controllers\CrmController.php on line 183.
+ 1 APPPATH\Controllers\CrmController.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CrmController::$requset', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 183)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->resolusi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 13:20:58 --> Undefined property: App\Controllers\CrmController::$requset
+in APPPATH\Controllers\CrmController.php on line 183.
+ 1 APPPATH\Controllers\CrmController.php(183): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\CrmController::$requset', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 183)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->resolusi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 13:21:16 --> Undefined array key "id_crm"
+in APPPATH\Controllers\CrmController.php on line 189.
+ 1 APPPATH\Controllers\CrmController.php(189): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_crm"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 189)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->resolusi()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 13:55:26 --> site_url(): Argument #2 ($scheme) must be of type ?string, array given, called in C:\xampp\htdocs\project_ta\app\Controllers\CrmController.php on line 199
+in SYSTEMPATH\Helpers\url_helper.php on line 30.
+ 1 APPPATH\Controllers\CrmController.php(199): site_url('crm/detail/116', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->editResolusi('116')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 14:01:52 --> Undefined variable $editData
+in APPPATH\Controllers\CrmController.php on line 133.
+ 1 APPPATH\Controllers\CrmController.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $editData', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 133)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->detail('116')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 15:16:21 --> date(): Argument #2 ($timestamp) must be of type ?int, string given
+in APPPATH\Views\Crm\Crm.php on line 36.
+ 1 APPPATH\Views\Crm\Crm.php(36): date('Y-m-d', '2024-06-04 00:00:00')
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(57): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 16:54:22 --> Undefined variable $selectedKategori
+in APPPATH\Views\Crm\Crm.php on line 20.
+ 1 APPPATH\Views\Crm\Crm.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $selectedKategori', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 20)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(57): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 17:11:50 --> Undefined variable $crmData
+in APPPATH\Controllers\CrmController.php on line 53.
+ 1 APPPATH\Controllers\CrmController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $crmData', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 53)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 17:12:22 --> Undefined variable $query
+in APPPATH\Models\ModelCrm.php on line 223.
+ 1 APPPATH\Models\ModelCrm.php(223): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $query', 'C:\\xampp\\htdocs\\project_ta\\app\\Models\\ModelCrm.php', 223)
+ 2 APPPATH\Controllers\CrmController.php(47): App\Models\ModelCrm->getDataByStatusAndKategori('closed', 'Ruang Kelas')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 18:09:13 --> Undefined array key "responder"
+in APPPATH\Views\Crm\Crm.php on line 96.
+ 1 APPPATH\Views\Crm\Crm.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "responder"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 96)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(60): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 18:10:46 --> Undefined array key "responder"
+in APPPATH\Views\Crm\Crm.php on line 96.
+ 1 APPPATH\Views\Crm\Crm.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "responder"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 96)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(60): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-22 18:11:09 --> Undefined array key "responder"
+in APPPATH\Views\Crm\Crm.php on line 96.
+ 1 APPPATH\Views\Crm\Crm.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "responder"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 96)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(60): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,92 @@
+CRITICAL - 2024-07-15 09:00:00 --> Undefined variable $data
+in APPPATH\Controllers\DashboardController.php on line 104.
+ 1 APPPATH\Controllers\DashboardController.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->landingPage()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 09:00:10 --> Undefined variable $title
+in APPPATH\Views\layout_landing\master.php on line 6.
+ 1 APPPATH\Views\layout_landing\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layout_landing\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layout_landing\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout_landing/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('landingPage', [], true)
+ 6 APPPATH\Controllers\DashboardController.php(104): view('landingPage')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->landingPage()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 11:58:54 --> Undefined property: App\Controllers\DashboardController::$ModelImage
+in APPPATH\Controllers\DashboardController.php on line 102.
+ 1 APPPATH\Controllers\DashboardController.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DashboardController::$ModelImage', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 102)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->landingPage()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 11:59:23 --> Undefined property: App\Controllers\DashboardController::$ModelNews
+in APPPATH\Controllers\DashboardController.php on line 105.
+ 1 APPPATH\Controllers\DashboardController.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\DashboardController::$ModelNews', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->landingPage()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 11:59:54 --> Class "App\Models\ModelNews" not found
+in APPPATH\Controllers\DashboardController.php on line 27.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\DashboardController->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-07-15 12:00:13 --> mysqli_sql_exception: Table 'ta.news' doesn't exist in C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\project_ta\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\project_ta\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\project_ta\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\project_ta\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\project_ta\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\project_ta\app\Controllers\DashboardController.php(107): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(942): App\Controllers\DashboardController->landingPage()
+#8 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+#9 C:\xampp\htdocs\project_ta\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\project_ta\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-07-15 12:00:13 --> Table 'ta.news' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `news`', [], false)
+ 2 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\DashboardController.php(107): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->landingPage()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 12:18:05 --> Invalid file: "berita.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('berita.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('berita', [], true)
+ 3 APPPATH\Controllers\LandingController.php(84): view('berita')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LandingController->create()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 12:22:55 --> Undefined variable $title
+in APPPATH\Views\layouts\master.php on line 6.
+ 1 APPPATH\Views\layouts\master.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php', 6)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\layouts\\master.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layouts/master', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('berita', [], true)
+ 6 APPPATH\Controllers\LandingController.php(84): view('berita')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LandingController->create()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingController))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-15 12:52:50 --> Undefined variable $data
+in APPPATH\Controllers\LandingController.php on line 82.
+ 1 APPPATH\Controllers\LandingController.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\LandingController.php', 82)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\LandingController->create()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LandingController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,22 @@
+CRITICAL - 2024-07-10 05:23:50 --> Trying to access array offset on value of type null
+in APPPATH\Views\Wali\detail.php on line 13.
+ 1 APPPATH\Views\Wali\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/detail', [], true)
+ 5 APPPATH\Controllers\WaliController.php(116): view('Wali/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->detail('20519')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-10 05:24:28 --> Trying to access array offset on value of type null
+in APPPATH\Views\Wali\detail.php on line 13.
+ 1 APPPATH\Views\Wali\detail.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php', 13)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Wali\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Wali/detail', [], true)
+ 5 APPPATH\Controllers\WaliController.php(116): view('Wali/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\WaliController->detail('20519')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\WaliController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

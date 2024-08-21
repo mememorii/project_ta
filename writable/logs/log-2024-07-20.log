@@ -1,0 +1,18 @@
+CRITICAL - 2024-07-20 08:05:19 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 75.
+ 1 APPPATH\Libraries\AuthLibrary.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 75)
+ 2 APPPATH\Libraries\AuthLibrary.php(31): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(56): App\Libraries\AuthLibrary->LoginUser('3301025511640001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-20 09:32:23 --> Trying to access array offset on value of type null
+in APPPATH\Libraries\AuthLibrary.php on line 75.
+ 1 APPPATH\Libraries\AuthLibrary.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Libraries\\AuthLibrary.php', 75)
+ 2 APPPATH\Libraries\AuthLibrary.php(31): App\Libraries\AuthLibrary->setUserSession([...])
+ 3 APPPATH\Controllers\Auth.php(56): App\Libraries\AuthLibrary->LoginUser('3301024601920001')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -8,24 +8,20 @@
           <div class="card-header">
             <h3 class="card-title">Form Edit Data</h3>
           </div>
-          <form action="<?= base_url("wali/update") ?>" method="post" id="text-editor">
-            <input type="hidden" name="id_wali" value="<?= $wali['id_wali'] ?>">
+          <form action="<?= base_url("wali/update") ?>" method="post" id="form">
+            <input type="hidden" name="id_data" id="id_data" value="<?= $wali['nik'] ?>">
             <div class="card-body">
               <div class="form-group">
                 <label>Nama</label>
                 <input type="text" class="form-control" name="nama" id="nama" value="<?= $wali['nama'] ?>">
-                <?php if ($validation->getError('nama')) { ?>
-                    <div class='alert alert-danger mt-2'>
-                        <?= $error = $validation->getError('nama'); ?>
-                    </div>
-                <?php } ?>
+               
               </div>
               <div class="row">
               <div class="col-md-3">  
                   <div class="form-group">
                     <label>Jenis Kelamin</label>
-                    <select class="form-control" style="width: 100%;" name="jk" id="jk" required>
-                      <option selected="selected" value="<?= $wali['jk'] ?>" hidden><?= $wali['jk'] ?></option>
+                    <select class="form-control" style="width: 100%;" name="jenis_kelamin" id="jenis_kelamin" required>
+                      <option selected="selected" value="<?= $wali['jenis_kelamin'] ?>" hidden><?= $wali['jenis_kelamin'] ?></option>
                       <option value="Laki Laki">Laki Laki</option>
                       <option value="Perempuan">Perempuan</option>
                     </select>
@@ -35,11 +31,7 @@
                   <div class="form-group">
                     <label>NIK</label>
                     <input type="number" class="form-control" name="nik" id="nik" value="<?= $wali['nik'] ?>">
-                    <?php if ($validation->getError('nik')) { ?>
-                        <div class='alert alert-danger mt-2'>
-                            <?= $error = $validation->getError('nik'); ?>
-                        </div>
-                    <?php } ?>
+                   
                   </div>  
                 </div>
                 <div class="col-md-3">
@@ -51,27 +43,31 @@
                 <div class="col-md-3">
                   <div class="form-group">
                       <label>Pendidikan</label>
-                      <input type="text" class="form-control" name="pendidikan" id="pendidikan" placeholder="<?= $wali['pendidikan'] ?>">
+                      <input type="text" class="form-control" name="pendidikan" id="pendidikan" value="<?= $wali['pendidikan'] ?>">
                   </div>
                 </div>
               </div>
               <div class="form-group">
+                <label>Alamat</label>
+                <textarea name="alamat" id="alamat" rows="4" class="form-control"><?= $wali['alamat'] ?></textarea>
+              </div>
+              <div class="form-group">
                   <label>Siswa</label>
-                  <select class="form-control select2" style="width: 100%;" name="id_siswa" id="id_siswa" required>
+                  <select class="form-control select2" style="width: 100%;" name="nisn_siswa" id="nisn_siswa" required>
                     <?php 
                       $siswaWali = '';
                       foreach ($getData as $value) {
-                          if ($value['id_siswa'] == $wali['id_siswa']) {
+                          if ($value['nisn'] == $wali['nisn_siswa']) {
                               $siswaWali = $value['nama'];
                               break;
                           }
                       }
                     ?>
-                    <option selected="selected" value="<?= $value['id_siswa'] ?>" hidden>
+                    <option selected="selected" value="<?= $value['nisn'] ?>" hidden>
                       <?= $siswaWali ?>
                     </option>
                     <?php foreach($getData as $value) { ?>
-                        <option value="<?= $value['id_siswa'] ?>" data-kelas="<?= $value['kelas'] ?>" data-rombel="<?= $value['rombel'] ?>">
+                        <option value="<?= $value['nisn'] ?>" data-kelas="<?= $value['kelas'] ?>" data-rombel="<?= $value['rombel'] ?>">
                           <?= $value['nama'] ?>
                         </option>
                     <?php } ?> 
@@ -88,100 +84,18 @@
       </div>
     </div>
   </div>
+  <script src="<?= base_url()?>public/assets/dist/js/editWali.js"></script>
   <script>
-    $(document).ready(function() {
-        $('#id_siswa').change(function() {
-            var selectedOption = $(this).find('option:selected');
-            
-            var kelas = selectedOption.data('kelas');
-            var rombel = selectedOption.data('rombel');
+  $(function(){
 
-            $('#kelas').val(kelas);
-            $('#rombel').val(rombel);
-        });
-    });
-</script>
-  <script>
-          document.addEventListener('DOMContentLoaded', (event) => {
-              const form = document.getElementById('text-editor');
-
-              form.addEventListener('submit', function(event) {
-                  event.preventDefault(); 
-
-                  Swal.fire({
-                      title: 'Apakah anda yakin?',
-                      text: "Pastikan data yang dimasukkan benar",
-                      icon: 'warning',
-                      showCancelButton: true,
-                      confirmButtonColor: '#28a745',
-                      cancelButtonColor: '#d33',
-                      cancelButtonText: 'Tidak',
-                      confirmButtonText: 'Iya'
-                  }).then((result) => {
-                      if (result.isConfirmed) {
-                          form.submit(); 
-                      }
-                  });
-              });
-          });
-  </script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('form');
- 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-        // Ambil nilai input
-        const nama = document.getElementById('nama').value;
-        const nik = document.getElementById('nik').value;
-
-        // Validasi karakter minimal
-        if (nama.length < 3) {
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'Nama harus memiliki minimal 3 karakter.',
-            });
-        } else if(nama.length > 60) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'Nama tidak boleh memiliki lebih dari 60 karakter.',
-            });
-        } else if(nik.length < 16 || nik.length > 16) {
-            // Proses form jika valid
-            Swal.fire({
-                icon: 'error',
-                title: 'Error!',
-                text: 'NIK harus memiliki 16 karakter.',
-            });
-        } else {
-            // Proses form jika valid
-          
-              event.preventDefault(); 
-
-              const href = this.getAttribute('href');
-
-              Swal.fire({
-                  title: 'Apakah Data Yang Dimasukkan Benar?',
-                  icon: 'warning',
-                  showCancelButton: true,
-                  confirmButtonColor: '#28a745',
-                  cancelButtonColor: '#d33',
-                  cancelButtonText: 'Tidak',
-                  confirmButtonText: 'Iya'
-              }).then((result) => {
-                  if (result.isConfirmed) {
-                    form.submit(); 
-                  }
-              });
-         
-     
-           
-        }
-    });
-});
+    <?php if(session()->has("error")){ ?>
+    Swal.fire({
+      icon:'error',
+      title:'error',
+      confirmButtonColor:'#7bb3ff',
+      text: '<?= session("error") ?>'
+    })
+  <?php } ?>
+  });
 </script>
 <?= $this->endSection()?>

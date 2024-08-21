@@ -1,0 +1,24 @@
+CRITICAL - 2024-07-26 03:07:48 --> Unknown HTTP status code provided with no message: 246
+in SYSTEMPATH\HTTP\ResponseTrait.php on line 160.
+ 1 SYSTEMPATH\HTTP\ResponseTrait.php(160): CodeIgniter\HTTP\Exceptions\HTTPException::forUnkownStatusCode(246)
+ 2 SYSTEMPATH\HTTP\ResponseTrait.php(544): CodeIgniter\HTTP\Response->setStatusCode(246)
+ 3 SYSTEMPATH\HTTP\RedirectResponse.php(42): CodeIgniter\HTTP\Response->redirect('http://localhost/project_ta/viewResetPassword/', 'auto', 246)
+ 4 APPPATH\Controllers\Auth.php(249): CodeIgniter\HTTP\RedirectResponse->to('http://localhost/project_ta/viewResetPassword/', 246)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cekPertanyaan()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 15:28:37 --> Call to a member function getTimestamp() on null
+in SYSTEMPATH\I18n\TimeTrait.php on line 971.
+ 1 APPPATH\Controllers\Auth.php(270): CodeIgniter\I18n\Time->isBefore(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->resetPassword('244', 'YzE0ODQ5NDY2ZWQwMzk5NDY3Yzc=')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-26 15:29:32 --> Call to a member function getTimestamp() on null
+in SYSTEMPATH\I18n\TimeTrait.php on line 971.
+ 1 APPPATH\Controllers\Auth.php(270): CodeIgniter\I18n\Time->isBefore(null)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->resetPassword('255', 'YzE0ODQ5NDY2ZWQwMzk5NDY3Yzc=')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

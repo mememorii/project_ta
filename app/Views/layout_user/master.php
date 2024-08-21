@@ -20,6 +20,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/bs-stepper/css/bs-stepper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css"/>
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/dropzone/min/dropzone.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/fontawesome-free/css/all.min.css">
@@ -27,9 +28,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="<?= base_url()?>public/assets/dist/css/feedback.css">
   <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.9.0/dist/sweetalert2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <link rel="stylesheet" href="<?= base_url()?>public/assets/dist/css/adminlte.min.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/dist/css/navbar.css">
   <link rel="stylesheet" href="<?= base_url()?>public/assets/dist/css/color.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
@@ -40,8 +41,26 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha384-qlmct0AOBiA2VPZkMY3+2WqkHtIQ9lSdAsAn5RUJD/3vA5MKDgSGcdmIv4ycVxyn" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
   <script src="<?= base_url()?>public/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-  <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+  <script src="<?= base_url('public/assets/plugins/ckeditor5/ckeditor.js') ?>"></script>
   <script src="https://kit.fontawesome.com/86e5d56058.js" crossorigin="anonymous"></script>
+  <script src="<?= base_url()?>public/assets/dist/js/popper.min.js"></script>
+  <style>
+    /* styles.css */
+    @media (max-width: 767px) {
+        .phone {
+            display: none; /* Sembunyikan breadcrumb pada layar ukuran smartphone */
+        }
+        .container-fluid {
+            padding-left: 0 !important; /* Hilangkan padding kiri */
+            padding-right: 0 !important; /* Hilangkan padding kanan */
+            margin-top: 50px !important;
+        }
+    }
+    .nav-link.active,
+    .show > .nav-link {
+      background-color: #7bb3ff !important;
+    }
+  </style>
 </head>
 <body class="hold-transition layout-top-nav body1">
 <div class="wrapper">
@@ -93,6 +112,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="<?= base_url()?>public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- ChartJS -->
   <script src="<?= base_url()?>public/assets/plugins/chart.js/Chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
   <!-- Sparkline -->
   <script src="<?= base_url()?>public/assets/plugins/sparklines/sparkline.js"></script>
   <!-- JQVMap -->
@@ -269,5 +289,50 @@ scratch. This page gets rid of all links and provides the needed markup only.
     }
     // DropzoneJS Demo Code End
   </script>
+
+  <script>
+  $(function () {
+    $('#example1').DataTable({
+      "paging": true,
+      "lengthChange": true,
+      "searching": true,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+      "columnDefs": [
+            { "targets": [1], "orderData": [1] } // Use data-order attribute for sorting the second column (Class)
+        ]
+    });
+  });
+</script>
+  <script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+      const konfirmasiButtons = document.querySelectorAll('.konfirmasi');
+
+      konfirmasiButtons.forEach(button => {
+          button.addEventListener('click', function(event) {
+              event.preventDefault(); 
+
+              const href = this.getAttribute('href');
+
+              Swal.fire({
+                  title: 'Apakah anda yakin?',
+                  text: "Data Tidak Akan Bisa Dikembalikan",
+                  icon: 'warning',
+                  showCancelButton: true,
+                  confirmButtonColor: '#28a745',
+                  cancelButtonColor: '#d33',
+                  cancelButtonText: 'Tidak',
+                  confirmButtonText: 'Iya'
+              }).then((result) => {
+                  if (result.isConfirmed) {
+                      window.location.href = href; 
+                  }
+              });
+          });
+      });
+  });
+</script>
 </body>
 </html>

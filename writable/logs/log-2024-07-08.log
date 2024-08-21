@@ -1,0 +1,34 @@
+CRITICAL - 2024-07-08 21:33:21 --> Undefined variable $message
+in APPPATH\Views\Siswa\create.php on line 136.
+ 1 APPPATH\Views\Siswa\create.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $message', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Siswa\\create.php', 136)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Siswa\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Siswa/create.php', [], true)
+ 5 APPPATH\Controllers\SiswaController.php(43): view('Siswa/create.php', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 21:55:28 --> Undefined property: App\Controllers\SiswaController::$session
+in APPPATH\Controllers\SiswaController.php on line 71.
+ 1 APPPATH\Controllers\SiswaController.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\SiswaController::$session', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\SiswaController.php', 71)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SiswaController->store()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SiswaController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 22:19:38 --> Undefined variable $data
+in APPPATH\Controllers\Auth.php on line 62.
+ 1 APPPATH\Controllers\Auth.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 62)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-08 22:41:15 --> CodeIgniter\Validation\Validation::setRules(): Argument #1 ($rules) must be of type array, null given, called in C:\xampp\htdocs\project_ta\system\Controller.php on line 196
+in SYSTEMPATH\Validation\Validation.php on line 555.
+ 1 SYSTEMPATH\Controller.php(196): CodeIgniter\Validation\Validation->setRules(null, [])
+ 2 SYSTEMPATH\Controller.php(150): CodeIgniter\Controller->setValidator(null, [])
+ 3 APPPATH\Controllers\Auth.php(70): CodeIgniter\Controller->validate(null)
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

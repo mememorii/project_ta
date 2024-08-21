@@ -12,12 +12,12 @@
       <a href="<?= base_url('guru/dashboard') ?>" class="brand-link">
     <?php } ?>
         <img src="<?= base_url()?>public/assets/dist/img/83790f2b43f00be.png" alt="TUT WURI HANDAYANI Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light"><b>SIPESANTIK</b></span>
+        <span class="brand-text font-weight-light"><b>SDN Kuripan Kidul 04</b></span>
       </a>
 
     <!-- Sidebar -->
     <div class="sidebar">
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex" id="profileNav">
             <div class="image">
               <img src="<?= base_url()?>public/assets/dist/img/profile-icon-design-free-vector.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
@@ -27,7 +27,7 @@
       </div>  
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <li class="nav-item">
+          <li class="nav-item" id="dashNav">
             <?php if (session()->get('role') == 1){ ?>
               <a href="<?= base_url ('admin/dashboard') ?>" class="nav-link <?= $menu=='Dashboard' ? 'active' : ''; ?>" >
             <?php }else{ ?>
@@ -40,7 +40,7 @@
             </a>
           </li>
           <?php if (session()->get('role') == '2') {  ?>
-          <li class="nav-item">
+          <li class="nav-item" id="feedNav">
             <a href="<?= base_url ('crm') ?>" class="nav-link <?= $menu=='Feedback' ? 'active' : ''; ?>" >
             <i class="nav-icon fa-solid fa-file-invoice"></i>
               <p>
@@ -49,7 +49,7 @@
             </a>
           </li>
           <?php }else{} ?>
-          <li class="nav-item">
+          <li class="nav-item" id="dataNav">
             <a href="#" class="nav-link">
               <i class="nav-icon fa-solid fa-database"></i>
               <p>
@@ -58,7 +58,7 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-            <li class="nav-item">
+            <li class="nav-item" id="guruNav">
               <?php if (session()->get('role') == 1){ ?>
                 <a href="<?= base_url ('admin/guru') ?>" class="nav-link <?= $menu=='Data Guru' ? 'active' : ''; ?>" >
               <?php }else{ ?>
@@ -70,7 +70,7 @@
                   </p>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="siswaNav">
             <?php if (session()->get('role') == 1){ ?>
               <a href="<?= base_url ('admin/siswa') ?>" class="nav-link <?= $menu=='Data Siswa' ? 'active' : ''; ?>" >
             <?php }else{ ?>
@@ -82,7 +82,7 @@
               </p>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="waliNav">
           <?php if (session()->get('role') == 1){ ?>
             <a href="<?= base_url ('admin/wali') ?>" class="nav-link <?= $menu=='Data Wali Siswa' ? 'active' : ''; ?>" >
           <?php }else{ ?>
@@ -95,7 +95,7 @@
             </a>
           </li>  
           <?php if (session()->get('role') == '1') { ?>
-            <li class="nav-item">
+            <li class="nav-item" id="userNav">
               <a href="<?= base_url ('user') ?>" class="nav-link <?= $menu=='Data User Account' ? 'active' : ''; ?>" >
               <i class="nav-icon fa-solid fa-id-badge"></i>
                 <p>
@@ -106,7 +106,7 @@
           <?php }else{} ?>
         </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="logoutNav">
               <a href="<?= base_url ('logout') ?>" class="nav-link <?= $menu=='' ? 'active' : ''; ?>" >
               <i class="nav-icon fa-solid fa-right-from-bracket"></i>
                 <p>

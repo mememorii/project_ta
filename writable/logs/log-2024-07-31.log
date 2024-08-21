@@ -1,0 +1,38 @@
+CRITICAL - 2024-07-31 00:29:56 --> Undefined variable $userAktif
+in APPPATH\Controllers\CrmController.php on line 104.
+ 1 APPPATH\Controllers\CrmController.php(104): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userAktif', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\CrmController.php', 104)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 09:04:00 --> Trying to access array offset on value of type null
+in APPPATH\Views\securityQuestion.php on line 48.
+ 1 APPPATH\Views\securityQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('securityQuestion', [], true)
+ 5 APPPATH\Controllers\Auth.php(282): view('securityQuestion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->securityQuestion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 09:04:35 --> Trying to access array offset on value of type null
+in APPPATH\Views\securityQuestion.php on line 48.
+ 1 APPPATH\Views\securityQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('securityQuestion', [], true)
+ 5 APPPATH\Controllers\Auth.php(282): view('securityQuestion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->securityQuestion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-07-31 10:32:06 --> Invalid file: "email.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('email.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('email', [], true)
+ 3 APPPATH\Controllers\Auth.php(449): view('email')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->email()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

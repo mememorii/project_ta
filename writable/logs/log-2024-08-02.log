@@ -1,0 +1,69 @@
+CRITICAL - 2024-08-02 07:52:37 --> Undefined variable $id
+in APPPATH\Controllers\DashboardController.php on line 103.
+ 1 APPPATH\Controllers\DashboardController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\DashboardController.php', 103)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\DashboardController->index_user()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-02 08:15:53 --> Trying to access array offset on value of type null
+in APPPATH\Views\securityQuestion.php on line 48.
+ 1 APPPATH\Views\securityQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('securityQuestion', [], true)
+ 5 APPPATH\Controllers\Auth.php(288): view('securityQuestion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->securityQuestion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-02 08:16:59 --> Trying to access array offset on value of type null
+in APPPATH\Views\securityQuestion.php on line 48.
+ 1 APPPATH\Views\securityQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('securityQuestion', [], true)
+ 5 APPPATH\Controllers\Auth.php(288): view('securityQuestion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->securityQuestion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-02 08:20:10 --> Trying to access array offset on value of type null
+in APPPATH\Views\securityQuestion.php on line 48.
+ 1 APPPATH\Views\securityQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('securityQuestion', [], true)
+ 5 APPPATH\Controllers\Auth.php(288): view('securityQuestion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->securityQuestion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-02 11:38:53 --> Undefined array key "role"
+in APPPATH\Views\Crm\Crm.php on line 71.
+ 1 APPPATH\Views\Crm\Crm.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "role"', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php', 71)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\Crm\\Crm.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('Crm/crm', [], true)
+ 5 APPPATH\Controllers\CrmController.php(80): view('Crm/crm', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\CrmController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CrmController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-02 13:49:26 --> Trying to access array offset on value of type null
+in APPPATH\Views\securityQuestion.php on line 48.
+ 1 APPPATH\Views\securityQuestion.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\project_ta\\app\\Views\\securityQuestion.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('securityQuestion', [], true)
+ 5 APPPATH\Controllers\Auth.php(288): view('securityQuestion', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->securityQuestion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-02 21:20:11 --> Undefined array key "id_users"
+in APPPATH\Controllers\Auth.php on line 318.
+ 1 APPPATH\Controllers\Auth.php(318): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_users"', 'C:\\xampp\\htdocs\\project_ta\\app\\Controllers\\Auth.php', 318)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->cekPertanyaan()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

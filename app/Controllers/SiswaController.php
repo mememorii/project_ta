@@ -3,6 +3,9 @@
 namespace App\Controllers;
 use App\Models\ModelSiswa;
 use App\Models\AuthModel;
+use App\Models\ModelCrm;
+use Dompdf\Dompdf;
+use Dompdf\Options;
 use PhpOffice\PhpSpreadsheet\Spreadsheet;
 use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
 use App\Controllers\BaseController;
@@ -15,6 +18,7 @@ class SiswaController extends BaseController
     { 
         $this->ModelSiswa = new \App\Models\ModelSiswa();
         $this->AuthModel = new \App\Models\AuthModel();
+        $this->ModelCrm = new \App\Models\ModelCrm();
     }
     
     //menampilkan halaman data Siswa
@@ -34,7 +38,7 @@ class SiswaController extends BaseController
         $data=[
             'title' => 'Tambah Data Siswa',
             'menu'=> 'Data Siswa',
-            'back'=>'',
+            'back'=>'admin/siswa',
         ];
         return view('Siswa/create.php',$data);
     }
@@ -47,7 +51,7 @@ class SiswaController extends BaseController
             'kelas'  => $this->request->getPost('kelas'),
             'nama'  => $this->request->getPost('nama'),
             'nipd'  => $this->request->getPost('nipd'),
-            'jk'  => $this->request->getPost('jk'),
+            'jenis_kelamin'  => $this->request->getPost('jenis_kelamin'),
             'nisn'  => $this->request->getPost('nisn'),
             'tempat_lahir'  => $this->request->getPost('tempat_lahir'),
             'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
@@ -59,41 +63,65 @@ class SiswaController extends BaseController
             'kelurahan'  => $this->request->getPost('kelurahan'),
             'rombel'  => $this->request->getPost('rombel'),
         ];
+        $cekNik = $this->ModelSiswa->where('nik', $data['nik'])
+        ->first();
+
+        $cekNipd = $this->ModelSiswa->where('nipd', $data['nipd'])
+        ->first();
+
+        $cekNisn = $this->ModelSiswa->where('nisn', $data['nisn'])
+                      ->first();
+
+        if ($cekNik) {
+            session()->setFlashdata('error', 'NIK Sudah Terdaftar.');
+            return redirect('siswa/create');
+        }elseif ($cekNipd) {
+            session()->setFlashdata('error', 'NIPD Sudah Terdaftar.');
+            return redirect('siswa/create');
+        }elseif ($cekNisn) {
+            session()->setFlashdata('error', 'NISN Sudah Terdaftar.');
+            return redirect('siswa/create');
+        }else{
         
-        $this->ModelSiswa->insert($data);
-        $id = $this->ModelSiswa->getInsertID();
+            $this->ModelSiswa->insert($data);
 
-        $user = [
-            'id_referensi'  => $id,
-            'nik'  => $this->request->getPost('nik'),
-            'password'  => $this->request->getPost('nik'),
-            'nama'  => $this->request->getPost('nama'),
-            'role'  => '3'
-        ];
+            $user = [
+                'id_referensi'  => $data['nisn'],
+                'nik'  => $this->request->getPost('nik'),
+                'password'  => $this->request->getPost('nik'),
+                'nama'  => $this->request->getPost('nama'),
+                'role'  => '3'
+            ];
 
-        $this->AuthModel->insert($user);
-       
-        return $this->response->redirect(site_url('admin/siswa'));
+            $this->AuthModel->insert($user);
+            session()->setFlashdata("success","Data Berhasil Disimpan");
+            return $this->response->redirect(site_url('admin/siswa'));
+        }
     }
 
-    public function detail ($id = null)
+    public function detail ($id)
     {
+        if(session()->get('role') == 1){
+            $back = 'admin/siswa';
+        }else{
+            $back = 'guru/siswa';
+        }
         $data=[
             'title' => 'Detail Data Siswa',
             'menu'=> 'Data Siswa',
-            'back'=>'',
+            'back'=> $back,
         ];
         $data['siswa'] = $this->ModelSiswa->find($id);
         return view('Siswa/detail',$data);
     }
 
     //menampilkan halaman edit data siswa siswa
-    public function edit($id = null)
+    public function edit($id)
     {
         $data=[
             'title' => 'Edit Data Siswa',
             'menu'=> 'Data Siswa',
-            'back'=>'',
+            'back'=>'admin/siswa',
         ];
         $data['siswa'] = $this->ModelSiswa->find($id);
 
@@ -104,11 +132,12 @@ class SiswaController extends BaseController
     public function update()
     {
         $data = [
-            'id_siswa'  => $this->request->getPost('id_siswa'),
+            'id_data'  => $this->request->getPost('id_data'),
+            'nisn'  => $this->request->getPost('nisn'),
             'kelas'  => $this->request->getPost('kelas'),
             'nama'  => $this->request->getPost('nama'),
             'nipd'  => $this->request->getPost('nipd'),
-            'jk'  => $this->request->getPost('jk'),
+            'jenis_kelamin'  => $this->request->getPost('jenis_kelamin'),
             'nisn'  => $this->request->getPost('nisn'),
             'tempat_lahir'  => $this->request->getPost('tempat_lahir'),
             'tanggal_lahir'  => $this->request->getPost('tanggal_lahir'),
@@ -122,37 +151,53 @@ class SiswaController extends BaseController
             'status'  => $this->request->getPost('status'),
             
         ];
+       
+        $oldData = $this->ModelSiswa->find($data['id_data']);
+        $oldNik = $oldData['nik'];
+        $oldNipd = $oldData['nipd'];
+        $oldNisn = $oldData['nisn'];
 
-        $id = $this->request->getPost('id_siswa');
-        $this->ModelSiswa->update($id,$data);
+        $nikCek = $this->ModelSiswa->where('nik', $data['nik'])
+        ->first();
 
-      
+        $nipdCek = $this->ModelSiswa->where('nipd', $data['nipd'])
+        ->first();
+        
+        $nisnCek = $this->ModelSiswa->where('nisn', $data['nisn'])
+        ->first();
+
+        if($oldNik != $data['nik']){
+            if ($nikCek) {
+                session()->setFlashdata('error', 'NIK Sudah Terdaftar.');
+                return redirect()->to('siswa/edit/' . $data['id_data']);
+            }
+           
+        }
+
+        if($oldNipd != $data['nipd']){
+            if($nipdCek){
+                session()->setFlashdata('error', 'NIPD Sudah Terdaftar.');
+                return redirect()->to('siswa/edit/' . $data['id_data']);
+            }
+        }
+
+        if($oldNisn != $data['nisn']){
+            if($nisnCek){
+                session()->setFlashdata('error', 'NISN Sudah Terdaftar.');
+                return redirect()->to('siswa/edit/' . $data['id_data']);
+            }
+        }
 
         $user = [
-            'id_referensi'  => $id,
-            'nik'  => $this->request->getPost('nik'),
-            'password'  => $this->request->getPost('nik'),
-            'nama'  => $this->request->getPost('nama'),
-            'role'  => '3'
+            'nama' => $this->request->getPost('nama'),
+            'nik' => $this->request->getPost('nik'),
         ];
-
-        $this->AuthModel->insert($user);
+        $id = $this->request->getPost('nisn');
+        $this->ModelSiswa->update($id,$data);
+        $this->AuthModel->where('id_referensi', $id)->set($user)->update();
         session()->setFlashdata("success","Data Berhasil Diedit");
+
         return redirect()->to('admin/siswa');
-    }
-
-    // menampilkan alert
-    public function showSweetAlertMessages()
-    {
-        session()->setFlashdata("success","This is success message");
-        
-        session()->setFlashdata("warning","This is warning message");
-
-        session()->setFlashdata("info","This is info message");
-
-        session()->setFlashdata("error","This is error message");
-
-        return view("sweetalert-notification");
     }
     
     // delete data Siswa
@@ -165,121 +210,5 @@ class SiswaController extends BaseController
         return redirect()->to('admin/siswa');
     }
 
-    public function cetak($id)
-    {
-        $userModel = new ModelSiswa();
-        $user = $userModel->find($id);
-        // Buat objek Spreadsheet
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-
-        // Data yang akan diekspor ke Excel
-        $data = [
-            ['Nama', 'NIK', 'NIPD', 'NISN', 'Jenis Kelamin', 'Tempat Lahir', 'Tanggal Lahir', 'Kelas', 'Rombel', 'Status'],
-            [$user['nama'], $user['nik'], $user['nipd'], $user['nisn'], $user['jk'], $user['tempat_lahir'], $user['tanggal_lahir'], $user['kelas'], $user['rombel'], $user['status']],
-        ];
-
-        // Menambahkan gaya pada header
-        $headerStyle = [
-            'font' => ['bold' => true],
-            'fill' => ['fillType' => 'solid', 'startColor' => ['rgb' => 'CCCCCC']],
-        ];
-
-        $sheet->fromArray($data, null, 'A1');
-
-        // Aplikasikan gaya pada header
-        $sheet->getStyle('A1:J1')->applyFromArray($headerStyle);
-
-        // Simpan sebagai file Excel
-        $writer = new Xlsx($spreadsheet);
-        $filename = 'user_' . $user['id_siswa'] . '.xlsx';
-
-        // Set header untuk download file
-        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename="' . $filename . '"');
-        header('Cache-Control: max-age=0');
-
-        $writer->save('php://output');
-        exit;
-
-    }
-
-    public function exportAll()
-    {
-        $data = $this->ModelSiswa->get_all_data(); // Retrieve all data from tbl_crm
-
-        // Create a new Spreadsheet
-        $spreadsheet = new Spreadsheet();
-        $sheet = $spreadsheet->getActiveSheet();
-
-        $columns = [
-            'A' => ['width' => 30, 'header' => 'Nama'],
-            'B' => ['width' => 20, 'header' => 'NIK'],
-            'C' => ['width' => 20, 'header' => 'NIPD'],
-            'D' => ['width' => 20, 'header' => 'NISN'],
-            'E' => ['width' => 10, 'header' => 'Jenis Kelamin'],
-            'F' => ['width' => 20, 'header' => 'Tempat Lahir'],
-            'G' => ['width' => 10, 'header' => 'Tanggal Lahir'],
-            'H' => ['width' => 10, 'header' => 'Kelas'],
-            'I' => ['width' => 10, 'header' => 'Rombel'],
-            'J' => ['width' => 10, 'header' => 'Status'],
-        ];
     
-        // Set column widths and headers dynamically
-        foreach ($columns as $column => $config) {
-            $sheet->getColumnDimension($column)->setWidth($config['width']);
-            $sheet->setCellValue($column . '1', $config['header']);
-        }
-    
-        // Add headers with specified fields
-        $sheet ->setCellValue('A1', 'Nama')
-               ->setCellValue('B1', 'NIK')
-               ->setCellValue('C1', 'NIPD')
-               ->setCellValue('D1', 'NISN')
-               ->setCellValue('E1', 'Jenis Kelamin')
-               ->setCellValue('F1', 'Tempat Lahir')
-               ->setCellValue('G1', 'Tanggal Lahir')
-               ->setCellValue('H1', 'Kelas')
-               ->setCellValue('I1', 'Rombel')
-               ->setCellValue('J1', 'Status');
-
-        $headerStyle = [
-            'font' => ['bold' => true, 'color' => ['argb' => 'FFFFFF']], // White font color for visibility
-            'fill' => ['fillType' => 'solid', 'startColor' => ['argb' => 'FFD700']], // Yellow background color
-            'borders' => [
-                'outline' => ['borderStyle' => \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN],
-            ],
-        ];
-    
-        // Apply style to header row A1 to E1
-        $sheet->getStyle('A1:J1')->applyFromArray($headerStyle);
-       
-        // Add data from database
-        $row = 2;
-        foreach ($data as $item) {
-            $sheet->setCellValue('A' . $row, $item['nama']);
-            $sheet->setCellValue('B' . $row, $item['nik']);
-            $sheet->setCellValue('C' . $row, $item['nipd']);
-            $sheet->setCellValue('D' . $row, $item['nisn']);
-            $sheet->setCellValue('E' . $row, $item['jk']);
-            $sheet->setCellValue('F' . $row, $item['tempat_lahir']);
-            $sheet->setCellValue('G' . $row, $item['tanggal_lahir']);
-            $sheet->setCellValue('H' . $row, $item['kelas']);
-            $sheet->setCellValue('I' . $row, $item['rombel']);
-            $sheet->setCellValue('J' . $row, $item['status']);
-            
-            $sheet->getStyle('A' . $row . ':J' . $row)->getBorders()->getAllBorders()->setBorderStyle(\PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THIN);
-
-            $row++;
-        }
-       
-        $filename = 'tbl_crm_' . date('Ymd_His') . '.xlsx';
-        header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
-        header('Content-Disposition: attachment;filename="' . $filename . '"');
-        header('Cache-Control: max-age=0');
-
-        // Save spreadsheet as file
-        $writer = new Xlsx($spreadsheet);
-        $writer->save('php://output');
-    }
 }
